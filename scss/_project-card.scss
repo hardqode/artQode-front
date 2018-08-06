@@ -1,0 +1,115 @@
+.project-card-container{
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 20px 24px 22px;
+  margin-bottom: 16px;
+  .project-card--header{
+    display: flex;
+    align-items: center;
+    .project-card-description{
+      width: auto;
+      h4{
+        font-weight: 600;
+        line-height: normal;
+        font-size: 20px;
+        color: #1A1A1A;
+      }
+      .project-card-status{
+        display: flex;
+        width: auto;
+        align-items: center;
+        margin-bottom: 12px;
+        .project-link {
+          line-height: normal;
+          font-size: 14px;
+          color: #3770DD;
+
+        }
+        .edit-btn{
+          width: 24px;
+          height: 24px;
+          padding: 0;
+          margin-left: 8px;
+          margin-right: 16px;
+        }
+        .project-label{
+          font-style: italic;
+          line-height: normal;
+          font-size: 14px;
+          font-weight: 300;
+          padding: 1px 5px 2px;
+          height: 20px;
+          &.changed{
+            color: #1A1A1A;
+            background: #FFF1A5;
+          }
+          &.not-responsed{
+            background: #D81D1D;
+            color: white;
+          }
+        }
+      }
+    }
+    .project-page-percentage{
+      width: auto;
+      margin-left: auto;
+      font-weight: 600;
+      line-height: normal;
+      font-size: 38px;
+      color: #1A1A1A;
+    }
+  }
+  .project-card--body{
+    border-top: 1px solid rgba(0,0,0,.12);
+    padding-top: 18px;
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    .body-item{
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 14px;
+      &.name{
+        width: 344px;
+        margin-right: 48px;
+        margin-left: 0;
+      }
+      &.width{
+        width: 55px;
+      }
+      &.date{
+        width: 64px;
+        text-align: center;
+      }
+    }
+    .project-card--body--header{
+      padding-left: 24px;
+      width: 100%;
+      padding-right: 8px;
+      padding-bottom: 8px;
+      color: rgba(26,26,26,.5);
+      display: flex;
+    }
+    .project-card--body--item{
+      width: 100%;
+      height: 36px;
+      padding: 10px 8px 9px 24px;
+      display: flex;
+      align-items: center;
+      &:last-of-type{
+        margin-bottom: 16px;
+      }
+      .body-item{
+        &.result{
+          font-weight: bold;
+         &.bad{
+           color:#D81D1D;
+         }
+        }
+      }
+    }
+    .btn-icon{
+      opacity: .5;
+    }
+  }
+}

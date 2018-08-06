@@ -1,0 +1,12 @@
+body{
+  font-family: 'Fira Sans',sans-serif;
+  background: #F1F1F1;
+  *{
+    &:active{
+      outline: none;
+    }
+    outline: none;
+  }
+}
+
+$black:#1A1A1A;

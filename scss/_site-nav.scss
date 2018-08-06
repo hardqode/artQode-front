@@ -1,0 +1,35 @@
+.site-nav{
+  padding-top: 32px;
+  margin-bottom: 29px;
+  .site-nav--container{
+
+    .site-nav--item{
+      font-size: 13px;
+      color: #3770DD;
+      margin-right: 12px;
+      &:not(:first-of-type){
+        padding-left: 18px;
+        position: relative;
+        &:before{
+          content: url("../assets/svg/arrow-right.svg");
+          position: absolute;
+          left: 0;
+          top: -1px;
+          bottom: 0;
+          margin: auto;
+          opacity: 0.3;
+        }
+      }
+      &:last-of-type{
+        color: rgba(26,26,26,1);
+        &:hover{
+          color: rgba(26,26,26,1);
+        }
+      }
+      &:hover{
+        text-decoration: none;
+        color: lighten(#3770DD,10);
+      }
+    }
+  }
+}
