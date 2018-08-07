@@ -157,7 +157,8 @@ header {
       padding: 20px 56px 36px; }
       .modal-dialog .modal-content .modal-body h2 {
         font-size: 24px;
-        margin-top: 16px; }
+        margin-top: 16px;
+        margin-bottom: 24px; }
       .modal-dialog .modal-content .modal-body input {
         width: 100%;
         margin-bottom: 16px; }
@@ -214,15 +215,20 @@ header {
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
     display: none; }
 
+.select2-results__option {
+  padding-left: 17px; }
+
 .project-card-container {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
-  padding: 20px 24px 22px;
+  padding: 0 24px 22px;
   margin-bottom: 16px; }
   .project-card-container .project-card--header {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px; }
     .project-card-container .project-card--header .project-card-description {
       width: auto; }
       .project-card-container .project-card--header .project-card-description h4 {
@@ -233,12 +239,17 @@ header {
       .project-card-container .project-card--header .project-card-description .project-card-status {
         display: flex;
         width: auto;
-        align-items: center;
-        margin-bottom: 12px; }
+        align-items: center; }
         .project-card-container .project-card--header .project-card-description .project-card-status .project-link {
           line-height: normal;
           font-size: 14px;
           color: #3770DD; }
+        .project-card-container .project-card--header .project-card-description .project-card-status .enter-link {
+          font-weight: normal;
+          line-height: normal;
+          font-size: 14px;
+          color: #1A1A1A;
+          opacity: 0.5; }
         .project-card-container .project-card--header .project-card-description .project-card-status .edit-btn {
           width: 24px;
           height: 24px;
@@ -260,6 +271,7 @@ header {
             color: white; }
     .project-card-container .project-card--header .project-page-percentage {
       width: auto;
+      display: flex;
       margin-left: auto;
       font-weight: 600;
       line-height: normal;
@@ -295,7 +307,10 @@ header {
       height: 36px;
       padding: 10px 8px 9px 24px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      cursor: pointer; }
+      .project-card-container .project-card--body .project-card--body--item:hover {
+        background-color: rgba(55, 112, 221, 0.1); }
       .project-card-container .project-card--body .project-card--body--item:last-of-type {
         margin-bottom: 16px; }
       .project-card-container .project-card--body .project-card--body--item .body-item.result {

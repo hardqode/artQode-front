@@ -2,11 +2,13 @@
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px;
-  padding: 20px 24px 22px;
+  padding: 0 24px 22px;
   margin-bottom: 16px;
   .project-card--header{
     display: flex;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
     .project-card-description{
       width: auto;
       h4{
@@ -19,12 +21,18 @@
         display: flex;
         width: auto;
         align-items: center;
-        margin-bottom: 12px;
         .project-link {
           line-height: normal;
           font-size: 14px;
           color: #3770DD;
 
+        }
+        .enter-link{
+          font-weight: normal;
+          line-height: normal;
+          font-size: 14px;
+          color: #1A1A1A;
+          opacity: 0.5;
         }
         .edit-btn{
           width: 24px;
@@ -53,6 +61,7 @@
     }
     .project-page-percentage{
       width: auto;
+      display: flex;
       margin-left: auto;
       font-weight: 600;
       line-height: normal;
@@ -96,6 +105,10 @@
       padding: 10px 8px 9px 24px;
       display: flex;
       align-items: center;
+      cursor: pointer;
+      &:hover{
+        background-color: rgba(55,112,221,.1);
+      }
       &:last-of-type{
         margin-bottom: 16px;
       }
