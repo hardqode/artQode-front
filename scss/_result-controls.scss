@@ -1,0 +1,59 @@
+
+.result-controls--row{
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  .result--value {
+    color: $black;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 44px;
+    position: relative;
+    &:after {
+      content: 'соответствия';
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -15px;
+      margin: auto;
+      font-size: 13px;
+      opacity: .5;
+      font-weight: 300;
+    }
+  }
+
+  .slider-link {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #1A1A1A;
+    border-bottom: 1px dotted rgba(26, 26, 26, .5);
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .select--col {
+    padding-right: 24px;
+    padding-left: 0;
+  }
+
+  .checkbox--col {
+    padding-right: 46px;
+    padding-left: 0;
+  }
+  .slider-link--col{
+    padding-left: 0;
+    padding-right: 0;
+    &:last-of-type{
+      padding-right: 15px;
+    }
+  }
+  .slider--col{
+    padding-left: 26px;
+    padding-right: 26px;
+    max-width: 432px;
+  }
+}
+
+
