@@ -185,6 +185,9 @@
   }
   .row {
     justify-content: space-between;
+    @media (max-width: 991px) {
+      justify-content: space-around;
+    }
   }
   h1 {
     margin-bottom: 48px;
@@ -265,19 +268,19 @@
 
 .landing-authors-section {
   padding-bottom: 120px;
-  @media (max-width:991px ) {
+  @media (max-width: 991px) {
     padding-top: 48px;
-    padding-bottom: 71px;
+    padding-bottom: 47px;
     text-align: center;
   }
   h1 {
     margin-bottom: 36px;
-    @media(max-width:991px){
+    @media(max-width: 991px) {
       margin-bottom: 32px;
     }
   }
   .author-tile {
-    @media(max-width:991px){
+    @media(max-width: 991px) {
       margin-bottom: 32px;
     }
 
@@ -286,13 +289,13 @@
     }
     p {
       margin-bottom: 10px;
-      @media(max-width:991px){
+      @media(max-width: 991px) {
         margin-bottom: 6px;
       }
     }
     .description {
       width: 238px;
-      @media(max-width:991px){
+      @media(max-width: 991px) {
         width: auto;
       }
       font-style: normal;
@@ -306,7 +309,8 @@
   }
 
   .info-container {
-    @media(max-width:991px){
+    @media(max-width: 991px) {
+      text-align: center;
       margin-top: 8px;
     }
     img {
@@ -315,9 +319,10 @@
     p {
       margin-bottom: 24px;
       width: 248px;
-      @media(max-width:991px){
-        width: 288px;
-
+      @media(max-width: 991px) {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 24px;
       }
       font-style: italic;
       font-weight: 300;
