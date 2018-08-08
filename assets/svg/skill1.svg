@@ -1,0 +1,12 @@
+<svg width="146" height="104" viewBox="0 0 146 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M144 0H0V102H144V0Z" transform="translate(1 1)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M108 0H0V55H108V0Z" transform="translate(18 35)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M88 0H0V14H88V0Z" transform="translate(27 44)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M24 0H0V14H24V0Z" transform="translate(27 67)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M24 0H0V14H24V0Z" transform="translate(59 67)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M24 0H0V14H24V0Z" transform="translate(91 67)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M34 0H0V14H34V0Z" transform="translate(18 11)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M0 0H18" transform="translate(109 19)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M0 0H34" transform="translate(62 19)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+    <path d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14Z" transform="translate(95 12)" stroke="#3770DD" stroke-width="2" stroke-miterlimit="10"/>
+</svg>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width,initial-scale=1" name="viewport">
+    <title>ArtQode</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,500,500i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/build.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="./assets/svg/logo.svg" class="logo" alt="">
+        <div class="right-block ">
+            <a href="#" class="link">Войти</a>
+            <button class="button button-blue" data-toggle="modal" data-target="#newProjectModal">Зарегистрироваться
+            </button>
+            <div class="modal fade" id="newProjectModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h2>Новый проект</h2>
+                                    <label for="name">Название</label>
+                                    <input type="text" class="custom-input" id="name">
+                                    <label for="description">Описание</label>
+                                    <textarea id="description" class="custom-input" rows="5"></textarea>
+                                    <button class="button button-red">Создать</button>
+                                </div>
+                                <div class="col-auto ml-auto px-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 14.0507L9.87733 7.98733L15.9387 1.87133L14.0507 0L7.99067 6.11933L1.87333 0.0606667L0 1.934L6.124 8.004L0.0606667 14.1267L1.934 16L8.00867 9.872L14.1287 15.9387L16 14.0507Z"
+                                          fill="black"/>
+                                    </svg>
+                                </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+<section class="landing-section landing-promo-section">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h1>
+                    Автоматизированное сравнение дизайна и вёрстки сайта
+                </h1>
+                <p>Сэкономим ваше время при проверке и тестировании вёрстки сайта</p>
+                <button class="button button-red d-none d-lg-block">
+                    Начать работу
+                </button>
+            </div>
+            <div class="col-12 col-lg-6 px-lg-0">
+                <img src="./assets/svg/landing-promo.svg" class="img-fluid " alt="">
+                <button class="button button-red d-lg-none">
+                    Начать работу
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-skills-section">
+    <div class="container">
+        <div class="row justify-content-xl-center">
+            <div class="col-12">
+                <h1>Что умеем?</h1>
+            </div>
+            <div class="col-12 col-lg-auto skill-container">
+                <img src="./assets/svg/skill1.svg" alt="" class="skill--img">
+                <p>Наглядно показываем результаты работы верстальщика</p>
+            </div>
+            <div class="col-12 col-lg-auto skill-container">
+                <img src="./assets/svg/skill2.svg" alt="" class="skill--img">
+                <p>Ведём историю изменений дизайна и вёрстки</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-how-it-works-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-auto text-block">
+                <h1>Как работает?</h1>
+                <p>Сравнение дизайна и вёрстки проводится с помощью машинного зрения и машинного обучения.</p>
+                <p>Вам остаётся только загрузить изображения и предоставить ссылки на вёрстку.</p>
+            </div>
+            <div class="col-auto img-block">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-opportunities-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1>Возможности</h1>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2>Автоматизированное сравнение с процентом соответствия</h2>
+                <p class="font-italic">Наглядно показывает работу верстальщика</p>
+            </div>
+            <div class="col-6 pl-lg-0 d-none d-lg-block">
+                <img src="./assets/svg/opportunity.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-6 px-0 d-lg-none" >
+                <img src="./assets/svg/opportunity-mobile.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-match-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 img-block d-none d-lg-flex">
+                <img src="./assets/svg/block-matching.svg" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2>Поблочное сравнение </h2>
+                <p class="font-italic">Позволит увидеть проблемные места в вёрстке</p>
+            </div>
+            <div class="col-12 px-0 d-lg-none img-block">
+                <img src="./assets/svg/block-matching-mobile.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-vsc-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 pr-lg-0">
+                <h2>Контроль версий дизайна и вёрстки</h2>
+                <p class="font-italic">Даст возможность отследить внесённые изменения</p>
+            </div>
+            <div class="col-6 d-none d-lg-block img-block">
+                <img src="./assets/svg/version-control.svg" alt="">
+            </div>
+            <div class="col-12 d-lg-none img-block">
+                <img src="./assets/svg/version-control-mobile.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-crossbrowsing-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 d-none d-lg-block img-block">
+                <img src="./assets/svg/browsers.svg" alt="">
+            </div>
+            <div class="col-12 col-lg-6 pl-lg-0">
+                <h2>Кроссбраузерная проверка
+                </h2>
+                <p class="font-italic">Тестирование в различных браузерах по-прежнему является важной задачей</p>
+            </div>
+            <div class="col-12 d-lg-none img-block">
+                <img src="./assets/svg/browsers.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-rates-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Тарифы</h1>
+            </div>
+            <div class="rates-item">
+                <div class="rates-item-block">
+                    <h3>Стартовый</h3>
+                    <p class="option">1 пользователь</p>
+                    <p class="option">3 проектов</p>
+                    <p class="price">700 ₽/мес.</p>
+                    <p class="description">Сэкономьте 800 ₽ при покупке годовой лицензии</p>
+                    <button class="button button-blue">Выбрать тариф</button>
+                </div>
+            </div>
+            <div class="rates-item">
+                <div class="rates-item-block">
+                    <h3>Профессиональный</h3>
+                    <p class="option">1 пользователь</p>
+                    <p class="option">∞ число проектов </p>
+                    <p class="price">1200 ₽/мес.</p>
+                    <p class="description">Сэкономьте 1400 ₽ при покупке годовой лицензии</p>
+                    <button class="button button-blue">Выбрать тариф</button>
+                </div>
+            </div>
+            <div class="rates-item">
+                <div class="rates-item-block">
+                    <h3>Командный</h3>
+                    <p class="option">5 пользователь</p>
+                    <p class="option">∞ проектов</p>
+                    <p class="price">2500 ₽/мес.</p>
+                    <p class="description">Сэкономьте 2560 ₽ при покупке годовой лицензии</p>
+                    <button class="button button-blue">Выбрать тариф</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="landing-section landing-authors-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Авторы</h1>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="author-tile">
+                    <img src="./assets/albert.png" width="88" alt="">
+                    <p>Баширов Альберт</p>
+
+                    <p class="description">
+                        Выпускник Starta Accelerator
+                    </p>
+                    <p class="description">
+                        Ex-CTO стартапа Zubmill
+                    </p>
+                    <p class="description">
+                        CEO HardQode
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="author-tile">
+                    <img src="./assets/vitaly.png" width="88" alt="">
+                    <p>Краснов Виталий</p>
+                    <p class="description">
+                        Ведущий тестировщик компаний Cinarra Systems
+                        и HardQode
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto ml-lg-auto info-container">
+                <img src="./assets/svg/it-park.svg" alt="">
+                <p >Проект создан в рамках 30-го Бизнес-инкубатора</p>
+                <img src="./assets/svg/tinkoff.svg" alt="">
+                <p >ИП Баширов А. Р.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-white">
+    <div class="container footer-container">
+        <p class="copyright">© 2018, ArtQode</p>
+        <a href="#" class="link">Политика конфиденциальности</a>
+        <a href="#" class="link">Связаться с нами</a>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

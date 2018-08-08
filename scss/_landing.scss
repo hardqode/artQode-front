@@ -1,0 +1,328 @@
+.landing-section {
+  background: white;
+  padding-top: 120px;
+  @media (max-width: 991px) {
+    padding-top: 56px;
+  }
+}
+
+.landing-promo-section {
+  padding-top: 52px;
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 40px;
+    @media(max-width: 991px) {
+      margin-bottom: 32px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  img {
+    margin: auto;
+    @media(max-width: 991px) {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.landing-skills-section {
+  padding-top: 160px;
+  @media (max-width: 991px) {
+    padding-top: 88px;
+  }
+  h1 {
+    margin-bottom: 57px;
+    @media (max-width: 991px) {
+      margin-bottom: 48px;
+    }
+    text-align: center;
+  }
+  .skill-container {
+    text-align: center;
+    @media (max-width: 991px) {
+      margin-bottom: 48px;
+    }
+    @media (min-width: 992px) {
+      max-width: 454px;
+    }
+    .skill--img {
+      margin-bottom: 24px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.landing-how-it-works-section {
+  padding-top: 160px;
+  @media (max-width: 991px) {
+    padding-top: 40px;
+  }
+  .text-block {
+    @media (max-width: 991px) {
+      text-align: center;
+      p {
+        margin-bottom: 24px;
+        &:first-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      max-width: 454px;
+    }
+  }
+  .img-block {
+    display: flex;
+    > div {
+      margin-left: auto;
+      width: 564px;
+      height: 340px;
+      @media(max-width: 991px) {
+        width: 288px;
+        height: 174px;
+      }
+      background: #E0E0E0;
+    }
+  }
+  h1 {
+    margin-bottom: 24px;
+  }
+}
+
+.landing-opportunities-section {
+  padding-top: 160px;
+  @media (max-width: 991px) {
+    padding-top: 88px;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 72px;
+    @media (max-width: 991px) {
+      margin-bottom: 32px;
+    }
+  }
+  h2 {
+    margin-bottom: 6px;
+  }
+  p {
+    @media (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.landing-match-section {
+  @media(max-width: 991px) {
+    padding-top: 72px;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 6px;
+    @media(max-width: 991px) {
+      margin-bottom: 10px;
+    }
+  }
+  @media(max-width: 991px) {
+    p {
+      margin-bottom: 45px;
+    }
+  }
+
+  .img-block {
+    display: flex;
+    justify-content: center;
+    img {
+      margin: auto;
+    }
+  }
+}
+
+.landing-vsc-section {
+  @media(max-width: 991px) {
+    padding-top: 72px;
+    text-align: center;
+    h1 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.landing-crossbrowsing-section {
+  padding-bottom: 160px;
+  @media(max-width: 991px) {
+    padding-top: 72px;
+    padding-bottom: 88px;
+    text-align: center;
+    h1 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.landing-rates-section {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  @media(max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    text-align: center;
+    h1 {
+      margin-bottom: 32px;
+    }
+  }
+  .row {
+    justify-content: space-between;
+  }
+  h1 {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  .rates-item {
+    width: 336px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 24px;
+    .rates-item-block {
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 34px 30px 32px;
+      @media (min-width: 992px) {
+        height: 427px;
+      }
+      @media(max-width: 991px) {
+        padding: 32px 16px;
+      }
+      text-align: center;
+      color: $black;
+      h3 {
+        font-weight: 300;
+        line-height: normal;
+        font-size: 26px;
+        margin-bottom: 32px;
+        @media(max-width: 991px) {
+          margin-bottom: 27px;
+        }
+      }
+      .option {
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 12px;
+        @media(max-width: 991px) {
+          margin-bottom: 10px;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 45px;
+          @media(max-width: 991px) {
+            margin-bottom: 32px;
+          }
+        }
+      }
+      .price {
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 32px;
+        margin-bottom: 16px;
+        @media(max-width: 991px) {
+          margin-bottom: 10px;
+        }
+      }
+      .description {
+        font-style: italic;
+        font-weight: 300;
+        line-height: 22px;
+        font-size: 15px;
+        margin-bottom: 39px;
+        @media(max-width: 991px) {
+          margin-bottom: 24px;
+        }
+      }
+      .button {
+        padding-top: 19px;
+        padding-bottom: 17px;
+      }
+    }
+  }
+}
+
+.landing-authors-section {
+  padding-bottom: 120px;
+  @media (max-width:991px ) {
+    padding-top: 48px;
+    padding-bottom: 71px;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 36px;
+    @media(max-width:991px){
+      margin-bottom: 32px;
+    }
+  }
+  .author-tile {
+    @media(max-width:991px){
+      margin-bottom: 32px;
+    }
+
+    img {
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 10px;
+      @media(max-width:991px){
+        margin-bottom: 6px;
+      }
+    }
+    .description {
+      width: 238px;
+      @media(max-width:991px){
+        width: auto;
+      }
+      font-style: normal;
+      font-weight: normal;
+      line-height: 19px;
+      font-size: 13px;
+      color: $black;
+      opacity: 0.5;
+      margin-bottom: 0;
+    }
+  }
+
+  .info-container {
+    @media(max-width:991px){
+      margin-top: 8px;
+    }
+    img {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 24px;
+      width: 248px;
+      @media(max-width:991px){
+        width: 288px;
+
+      }
+      font-style: italic;
+      font-weight: 300;
+      line-height: 23px;
+      font-size: 16px;
+    }
+  }
+}
