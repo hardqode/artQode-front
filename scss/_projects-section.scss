@@ -13,6 +13,12 @@
       border-radius: 6px;
       overflow: hidden;
       margin-bottom: 30px;
+      color: $black;
+      transition: all .3s;
+      &:hover {
+        cursor: pointer;
+        color: #2360D6;
+      }
       .project-section--item--album {
         width: 100%;
         height: 216px;
@@ -26,7 +32,7 @@
           max-height: 47px;
           overflow: hidden;
           margin-bottom: 5px;
-          color: $black;
+          color: inherit;
           font-weight: 600;
           line-height: 23px;
           font-size: 16px;
