@@ -759,6 +759,28 @@ header {
     padding-right: 26px;
     max-width: 432px; }
 
+.result-section {
+  margin-top: 48px;
+  padding-bottom: 120px; }
+  .result-section .container {
+    width: 1040px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative; }
+    .result-section .container img {
+      z-index: 1; }
+      .result-section .container img[slider-target="verstka"] {
+        opacity: 0; }
+      .result-section .container img:not(:first-of-type) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2; }
+      .result-section .container img.contures {
+        z-index: 3; }
+
 .checkbox-container input {
   display: none; }
 .checkbox-container label {

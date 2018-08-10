@@ -97,8 +97,8 @@
                     </div>
                     <div class="col-auto checkbox--col">
                         <div class="checkbox-container">
-                            <input type="checkbox" id="contures">
-                            <label for="contures" class="custom-checkbox">Контуры</label>
+                            <input type="checkbox" id="contures" checked>
+                            <label for="contures" class="custom-checkbox" >Контуры</label>
                         </div>
 
                     </div>
@@ -118,7 +118,13 @@
     </div>
 
 </section>
-
+<section class="result-section">
+    <div class="container">
+        <img src="./assets/contures/design.png"  slider-target="design" alt="">
+        <img src="./assets/contures/verstka.png" slider-target="verstka" alt="">
+        <img src="./assets/contures/контуры.png" slider-target="contures" alt="">
+    </div>
+</section>
 
 <footer>
     <div class="container footer-container">
@@ -139,7 +145,7 @@
     });
 </script>
 <script>
-    var slider = $('#slider'),
+    var slider = document.getElementById('slider'),
         sliderBtnDesign = $('.slider-link.design'),
         sliderBtnHtml = $('.slider-link.html');
 
@@ -151,6 +157,18 @@
             'max': 100
         }
     });
+    slider.noUiSlider.on('update',function () {
+       var val = slider.noUiSlider.get() / 100;
+
+       $('[slider-target="verstka"]').css('opacity',val);
+    });
+    $('label[for="contures"]').on('click',function () {
+        if($('#contures').prop('checked')){
+            $('[slider-target="contures"]').hide();
+        }else{
+            $('[slider-target="contures"]').show();
+        }
+    })
 
     sliderBtnDesign.on('click', function () {
         slider.noUiSlider.set(0);
