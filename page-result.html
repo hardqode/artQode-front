@@ -72,7 +72,7 @@
     </div>
 </section>
 
-<section>
+<section class="result-controls-section">
     <div class="container">
         <div class="row result-controls--row">
 
@@ -178,5 +178,13 @@
         slider.noUiSlider.set(100);
     })
 </script>
+<script>
+    $(document).on('scroll',function () {
+       if($(this).scrollTop() > 173){
+           $('.result-controls-section').addClass('fixed-controls');
+       }else{
+           $('.result-controls-section').removeClass('fixed-controls');
+       }
+    })</script>
 </body>
 </html>

@@ -715,6 +715,27 @@ header {
         .project-card-container .project-card--body .project-card--body--item .body-item.result.bad {
           color: #D81D1D; }
 
+.fixed-controls {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+  padding-bottom: 26px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.04); }
+  .fixed-controls .result-controls--row {
+    margin-bottom: 0; }
+  .fixed-controls + .result-section {
+    margin-top: 96px; }
+
+@keyframes showFromTop {
+  0% {
+    transform: translateY(-96px); }
+  100% {
+    transform: translateY(0); } }
 .result-controls--row {
   align-items: center;
   justify-content: flex-end;
