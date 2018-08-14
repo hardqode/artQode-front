@@ -1,0 +1,83 @@
+.popup-container {
+  position: relative;
+  .popup {
+    padding-top: 12px;
+    display: none;
+    position: absolute;
+    right: 0;
+    &.show {
+      display: block;
+    }
+    .popup-content {
+      &:before {
+        content: url("../assets/svg/popup-arrow.svg");
+        position: absolute;
+        top: -15px;
+        width: 12px;
+        height: 8px;
+        right: 13px;
+      }
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background: white;
+      border-radius: 3px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      right: 0;
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.24), 0px 2px 6px rgba(0, 0, 0, 0.08);
+      &.lk {
+        width: 108px;
+        height: 80px;
+        font-size: 14px;
+      }
+      &.notifications {
+        font-size: 13px;
+        overflow-y: scroll;
+        width: 456px;
+        height: 224px;
+        max-height: 224px;
+        position: relative;
+        .link {
+          line-height: 17px;
+          padding-right: 42px;
+        }
+        &.no-notifications{
+          position: relative;
+          &:after{
+            content: 'Все оповещения прочитаны';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 21px;
+            font-size: 16px;
+            text-align: center;
+            color: #1A1A1A;
+            opacity: 0.4;
+            height: 22px;
+          }
+        }
+      }
+
+      //elements
+      .link {
+        padding-top: 8px;
+        padding-bottom: 7px;
+        padding-left: 16px;
+        color: #1A1A1A;
+        width: 100%;
+        line-height: normal;
+        &:hover {
+          background: rgba(55, 112, 221, .1);
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+}

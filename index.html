@@ -29,10 +29,10 @@
                             <div class="row">
                                 <div class="col">
                                     <h2>Новый проект</h2>
-                                    <label for="name" >Название</label>
-                                    <input type="text" class="custom-input" id="name" >
+                                    <label for="name">Название</label>
+                                    <input type="text" class="custom-input" id="name">
                                     <label for="description">Описание</label>
-                                    <textarea id="description"  class="custom-input" rows="5"></textarea>
+                                    <textarea id="description" class="custom-input" rows="5"></textarea>
                                     <button class="button button-red">Создать</button>
                                 </div>
                                 <div class="col-auto ml-auto px-0">
@@ -51,13 +51,37 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-icon has-updates">
-                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 21C13 22.598 11.608 24 10.029 24C8.45 24 7 22.598 7 21H13ZM13.137 3.945C12.493 3.571 12.095 2.875 12.096 2.125V2.122C12.097 0.95 11.158 0 10 0C8.842 0 7.903 0.95 7.903 2.122V2.125C7.904 2.876 7.507 3.571 6.862 3.945C2.194 6.654 4.877 15.66 0 17.251V19H20V17.251C15.123 15.66 17.807 6.653 13.137 3.945ZM10 1C10.552 1 11 1.449 11 2C11 2.552 10.552 3 10 3C9.448 3 9 2.552 9 2C9 1.449 9.448 1 10 1ZM3.549 17C4.738 15.333 5.154 13.109 5.513 11.185C5.96 8.795 6.382 6.537 7.867 5.676C9.247 4.875 10.823 4.916 12.134 5.676C13.619 6.537 14.041 8.795 14.488 11.185C14.847 13.109 15.263 15.333 16.452 17H3.549Z"
-                          fill="#1A1A1A"/>
-                </svg>
-            </button>
-            <img src="./assets/avatar.png" class="avatar" alt="">
+            <div class="notifications-btn-section popup-container">
+                <button class="btn-icon has-updates" popup-target="#notifications">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 21C13 22.598 11.608 24 10.029 24C8.45 24 7 22.598 7 21H13ZM13.137 3.945C12.493 3.571 12.095 2.875 12.096 2.125V2.122C12.097 0.95 11.158 0 10 0C8.842 0 7.903 0.95 7.903 2.122V2.125C7.904 2.876 7.507 3.571 6.862 3.945C2.194 6.654 4.877 15.66 0 17.251V19H20V17.251C15.123 15.66 17.807 6.653 13.137 3.945ZM10 1C10.552 1 11 1.449 11 2C11 2.552 10.552 3 10 3C9.448 3 9 2.552 9 2C9 1.449 9.448 1 10 1ZM3.549 17C4.738 15.333 5.154 13.109 5.513 11.185C5.96 8.795 6.382 6.537 7.867 5.676C9.247 4.875 10.823 4.916 12.134 5.676C13.619 6.537 14.041 8.795 14.488 11.185C14.847 13.109 15.263 15.333 16.452 17H3.549Z"
+                              fill="#1A1A1A"/>
+                    </svg>
+                </button>
+
+                <div class="popup" id="notifications">
+                    <div class="popup-content notifications "> <!-- add class no-notifications and remove all links to see empty list -->
+                        <a href="#" class="link">Задача организации, в особенности же дальнейшее развитие различных форм
+                            деятельности позволяет оценить значение соответствующий условий активизации. Постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа.</a>
+                        <a href="#" class="link">Разнообразный и богатый опыт сложившаяся структура организации
+                            позволяет выполнять важные задания по разработке соответствующий условий активизации. </a>
+                        <a href="#" class="link">Равным образом рамки и место обучения кадров играет важную роль в
+                            формировании соответствующий условий активизации.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar-section popup-container">
+                <button class="btn-icon avatar" popup-target="#lkMenu">
+                    <img src="./assets/avatar.png" class="avatar" alt="">
+                </button>
+                <div class="popup" id="lkMenu">
+                    <div class="popup-content lk">
+                        <a href="#" class="link">Профиль</a>
+                        <a href="#" class="link">Войти</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -164,5 +188,32 @@
 </footer>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    //popup showing case
+
+    $('[popup-target]').on('click', function () {
+        var trgt = $(this).attr('popup-target');
+        console.log($(trgt));
+        $(trgt).toggleClass('show');
+        var clickContainer = $(this).parent();
+        $(function () {
+
+            var $win = $(window); // or $box parent container
+            var $box = $(clickContainer);
+
+            $win.on("click.Bst", function (event) {
+                if ($box.has(event.target).length == 0 && !$box.is(event.target)) {
+                    $(trgt).toggleClass('show');
+                    $win.off('click');
+                    // $log.text("you clicked outside the box");
+                } else {
+
+                }
+            });
+
+        });
+    });
+
+</script>
 </body>
 </html>

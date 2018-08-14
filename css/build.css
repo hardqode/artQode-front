@@ -117,6 +117,10 @@ button {
   border-radius: 3px;
   transition: all .3s;
   padding: 7px; }
+  .btn-icon.avatar {
+    padding: 0; }
+    .btn-icon.avatar img {
+      opacity: 1; }
   .btn-icon.has-updates {
     position: relative; }
     .btn-icon.has-updates:after {
@@ -145,6 +149,75 @@ button {
     transition: all .3s; }
   .btn-icon:hover img, .btn-icon:hover svg {
     opacity: .8; }
+
+.popup-container {
+  position: relative; }
+  .popup-container .popup {
+    padding-top: 12px;
+    display: none;
+    position: absolute;
+    right: 0; }
+    .popup-container .popup.show {
+      display: block; }
+    .popup-container .popup .popup-content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background: white;
+      border-radius: 3px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      right: 0;
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.24), 0px 2px 6px rgba(0, 0, 0, 0.08); }
+      .popup-container .popup .popup-content:before {
+        content: url("../assets/svg/popup-arrow.svg");
+        position: absolute;
+        top: -15px;
+        width: 12px;
+        height: 8px;
+        right: 13px; }
+      .popup-container .popup .popup-content.lk {
+        width: 108px;
+        height: 80px;
+        font-size: 14px; }
+      .popup-container .popup .popup-content.notifications {
+        font-size: 13px;
+        overflow-y: scroll;
+        width: 456px;
+        height: 224px;
+        max-height: 224px;
+        position: relative; }
+        .popup-container .popup .popup-content.notifications .link {
+          line-height: 17px;
+          padding-right: 42px; }
+        .popup-container .popup .popup-content.notifications.no-notifications {
+          position: relative; }
+          .popup-container .popup .popup-content.notifications.no-notifications:after {
+            content: 'Все оповещения прочитаны';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 21px;
+            font-size: 16px;
+            text-align: center;
+            color: #1A1A1A;
+            opacity: 0.4;
+            height: 22px; }
+      .popup-container .popup .popup-content .link {
+        padding-top: 8px;
+        padding-bottom: 7px;
+        padding-left: 16px;
+        color: #1A1A1A;
+        width: 100%;
+        line-height: normal; }
+        .popup-container .popup .popup-content .link:hover {
+          background: rgba(55, 112, 221, 0.1);
+          text-decoration: none; }
 
 header {
   min-height: 88px;
@@ -212,13 +285,15 @@ header {
       header .global-search input::placeholder {
         color: #1A1A1A;
         opacity: .3; }
-  header .btn-icon {
-    margin-left: 40px; }
-  header .avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
+  header .notifications-btn-section {
+    margin-left: 40px;
+    position: relative; }
+  header .avatar-section {
     margin-left: 24px; }
+    header .avatar-section .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%; }
 
 .landing-section {
   background: white;

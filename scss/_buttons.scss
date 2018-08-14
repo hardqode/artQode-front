@@ -54,6 +54,12 @@ button {
   border-radius: 3px;
   transition: all .3s;
   padding: 7px;
+  &.avatar{
+    padding: 0;
+    img{
+      opacity: 1;
+    }
+  }
   &.has-updates {
     position: relative;
     &:after {

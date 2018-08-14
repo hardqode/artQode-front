@@ -77,13 +77,18 @@ header {
       }
     }
   }
-  .btn-icon{
+  .notifications-btn-section{
     margin-left: 40px;
+    position: relative;
+    .btn-icon{
+    }
   }
-  .avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
+  .avatar-section{
     margin-left: 24px;
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
   }
 }
