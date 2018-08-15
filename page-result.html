@@ -242,7 +242,7 @@
 
 </script>
 <script>
-    $('.global-search').on('keydown',function () {
+    $('.global-search').on('keydown keyup',function () {
         var clear = $(this).parent().find('.clear-icon');
         if($(this).val() !== ''){
             clear.addClass('show');

@@ -8,6 +8,10 @@ button {
   padding: 15px 24px 13px;
   border-radius: 3px;
   border: 0;
+  &[disabled]{
+    background: #C8C8C8 !important;
+    color: white !important;
+  }
   &.button-blue {
     background: #3770DD;
     font-weight: 600;
