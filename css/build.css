@@ -151,15 +151,15 @@ button {
     opacity: .8; }
 
 .popup-container {
-  position: relative;
-  z-index: 200; }
+  position: relative; }
   .popup-container .btn-icon img {
     margin-left: 8px; }
   .popup-container .popup {
     padding-top: 12px;
     display: none;
     position: absolute;
-    right: 0; }
+    right: 0;
+    z-index: 200; }
     .popup-container .popup:before {
       content: url("../assets/svg/popup-arrow.svg");
       position: absolute;
@@ -182,6 +182,23 @@ button {
       .popup-container .popup.project-popup .popup-content {
         left: 0;
         margin: auto; }
+    .popup-container .popup.popup-info {
+      top: -12px; }
+      .popup-container .popup.popup-info:before {
+        display: none; }
+      .popup-container .popup.popup-info .popup-content {
+        background: rgba(26, 26, 26, 0.9);
+        padding: 6px 12px;
+        transform: translate(30%, -100%);
+        min-width: 153px;
+        box-shadow: none; }
+        .popup-container .popup.popup-info .popup-content p {
+          color: white;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          font-size: 13px;
+          margin-bottom: 0; }
     .popup-container .popup .popup-content {
       display: flex;
       flex-direction: column;
@@ -287,10 +304,14 @@ header {
     height: 48px;
     display: flex;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.14);
     border-radius: 3px;
     position: relative;
     margin-right: 16px; }
+    header .global-search:hover {
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+    header .global-search:focus {
+      border: 1px solid #1A1A1A; }
     header .global-search .icon {
       padding: 0;
       position: absolute;
@@ -613,6 +634,9 @@ header {
         font-size: 36px;
         margin-top: 16px;
         margin-bottom: 24px; }
+        .modal-dialog .modal-content .modal-body h2.fsz-24 {
+          font-size: 24px;
+          font-weight: 600; }
       .modal-dialog .modal-content .modal-body input {
         width: 100%;
         margin-bottom: 16px; }
@@ -750,6 +774,11 @@ header {
           font-size: 14px;
           color: #1A1A1A;
           opacity: 0.5; }
+          .project-card-container .project-card--header .project-card-description .project-card-status .enter-link img {
+            margin-left: 12px; }
+          .project-card-container .project-card--header .project-card-description .project-card-status .enter-link:hover {
+            text-decoration: none;
+            opacity: 1; }
         .project-card-container .project-card--header .project-card-description .project-card-status .edit-btn {
           width: 24px;
           height: 24px;

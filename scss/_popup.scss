@@ -1,6 +1,5 @@
 .popup-container {
   position: relative;
-  z-index: 200;
   .btn-icon{
     img{
       margin-left: 8px;
@@ -11,6 +10,7 @@
     display: none;
     position: absolute;
     right: 0;
+    z-index: 200;
     &:before {
       content: url("../assets/svg/popup-arrow.svg");
       position: absolute;
@@ -36,6 +36,27 @@
       .popup-content{
         left: 0;
         margin: auto;
+      }
+    }
+    &.popup-info{
+      top: -12px;
+      &:before{
+        display: none;
+      }
+      .popup-content{
+        background: rgba(26,26,26,.9);
+        padding: 6px 12px;
+        transform: translate(30%,-100%);
+        min-width: 153px;
+        box-shadow: none;
+        p{
+          color: white;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          font-size: 13px;
+          margin-bottom: 0;
+        }
       }
     }
     .popup-content {

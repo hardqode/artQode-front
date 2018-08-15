@@ -17,6 +17,10 @@
         font-size: 36px;
         margin-top: 16px;
         margin-bottom: 24px;
+        &.fsz-24{
+          font-size: 24px;
+          font-weight: 600;
+        }
       }
       input {
         width: 100%;
