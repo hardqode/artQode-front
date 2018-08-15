@@ -18,9 +18,10 @@
     <div class="container">
         <img src="./assets/svg/logo.svg" class="logo" alt="">
         <div class="right-block">
-            <div class="global-search">
+            <div class="global-search-container">
                 <img src="./assets/svg/search-icon.svg" class="icon" alt="">
-                <input type="text" placeholder="Поиск по названию...">
+                <input type="text" class="global-search" placeholder="Поиск по названию...">
+                <a  role="button" class="clear-icon"> <img src="./assets/svg/clear.svg" alt=""></a>
             </div>
             <button class="button button-blue" data-toggle="modal" data-target="#newProjectModal">Новый проект</button>
             <div class="modal fade" id="newProjectModal" tabindex="-1" role="dialog">
@@ -88,6 +89,7 @@
     </div>
 
 </header>
+
 
 <section class="site-nav">
     <div class="container site-nav--container">
@@ -239,6 +241,19 @@
     });
 
 </script>
-
+<script>
+    $('.global-search').on('keydown',function () {
+        var clear = $(this).parent().find('.clear-icon');
+        if($(this).val() !== ''){
+            clear.addClass('show');
+        }else{
+            clear.removeClass('show');
+        }
+    })
+    $('.global-search-container .clear-icon').on('click',function () {
+        $('.global-search').val('');
+        $(this).removeClass('show');
+    })
+</script>
 </body>
 </html>

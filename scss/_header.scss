@@ -40,23 +40,38 @@ header {
     }
 
   }
-  .global-search {
-    overflow: hidden;
-    width: 392px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.14);
-    border-radius: 3px;
+  .global-search-container {
     position: relative;
     margin-right: 16px;
-    &:hover{
-      border: 1px solid rgba(0, 0, 0, 0.3);
+    .clear-icon{
+      display: none;
+      position: absolute;
+      right: 16px;
+      top: 0;
+      bottom: 0;
+      cursor: pointer;
+      &.show{
+        display: flex;
+      }
+      img{
+        margin: auto;
+      }
     }
-    &:focus{
-      border: 1px solid $black;
+    .global-search{
+      width: 392px;
+      height: 48px;
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      border-radius: 3px;
+      padding-left: 48px;
+      &:hover{
+        border: 1px solid rgba(0, 0, 0, 0.3);
+      }
+      &:focus{
+        border: 1px solid #3770DD;
 
+      }
     }
+
     .icon {
       padding: 0;
       position: absolute;
