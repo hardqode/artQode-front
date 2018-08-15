@@ -1,22 +1,44 @@
 .popup-container {
   position: relative;
+  z-index: 200;
+  .btn-icon{
+    img{
+      margin-left: 8px;
+    }
+  }
   .popup {
     padding-top: 12px;
     display: none;
     position: absolute;
     right: 0;
+    &:before {
+      content: url("../assets/svg/popup-arrow.svg");
+      position: absolute;
+      top: -5px;
+      width: 12px;
+      height: 8px;
+      right: 13px;
+      z-index: 5;
+    }
     &.show {
       display: block;
     }
-    .popup-content {
-      &:before {
-        content: url("../assets/svg/popup-arrow.svg");
-        position: absolute;
-        top: -15px;
-        width: 12px;
-        height: 8px;
-        right: 13px;
+    &.project-popup{
+      left: 0;
+      margin: auto;
+      top: -16px;
+      width: 164px;
+      transform: translateX(-50%);
+      font-size: 14px;
+      &:before{
+        display: none;
       }
+      .popup-content{
+        left: 0;
+        margin: auto;
+      }
+    }
+    .popup-content {
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -75,6 +97,24 @@
         &:hover {
           background: rgba(55, 112, 221, .1);
           text-decoration: none;
+
+        }
+        &.link-w-icon{
+          padding-left: 42px;
+          position: relative;
+          &:hover{
+            img{
+              opacity: .8;
+            }
+          }
+          img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 16px;
+            opacity: .3;
+          }
         }
       }
     }

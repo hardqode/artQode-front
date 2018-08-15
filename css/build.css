@@ -151,14 +151,37 @@ button {
     opacity: .8; }
 
 .popup-container {
-  position: relative; }
+  position: relative;
+  z-index: 200; }
+  .popup-container .btn-icon img {
+    margin-left: 8px; }
   .popup-container .popup {
     padding-top: 12px;
     display: none;
     position: absolute;
     right: 0; }
+    .popup-container .popup:before {
+      content: url("../assets/svg/popup-arrow.svg");
+      position: absolute;
+      top: -5px;
+      width: 12px;
+      height: 8px;
+      right: 13px;
+      z-index: 5; }
     .popup-container .popup.show {
       display: block; }
+    .popup-container .popup.project-popup {
+      left: 0;
+      margin: auto;
+      top: -16px;
+      width: 164px;
+      transform: translateX(-50%);
+      font-size: 14px; }
+      .popup-container .popup.project-popup:before {
+        display: none; }
+      .popup-container .popup.project-popup .popup-content {
+        left: 0;
+        margin: auto; }
     .popup-container .popup .popup-content {
       display: flex;
       flex-direction: column;
@@ -169,13 +192,6 @@ button {
       padding-bottom: 8px;
       right: 0;
       box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.24), 0px 2px 6px rgba(0, 0, 0, 0.08); }
-      .popup-container .popup .popup-content:before {
-        content: url("../assets/svg/popup-arrow.svg");
-        position: absolute;
-        top: -15px;
-        width: 12px;
-        height: 8px;
-        right: 13px; }
       .popup-container .popup .popup-content.lk {
         width: 108px;
         height: 80px;
@@ -218,6 +234,18 @@ button {
         .popup-container .popup .popup-content .link:hover {
           background: rgba(55, 112, 221, 0.1);
           text-decoration: none; }
+        .popup-container .popup .popup-content .link.link-w-icon {
+          padding-left: 42px;
+          position: relative; }
+          .popup-container .popup .popup-content .link.link-w-icon:hover img {
+            opacity: .8; }
+          .popup-container .popup .popup-content .link.link-w-icon img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 16px;
+            opacity: .3; }
 
 header {
   min-height: 88px;
@@ -985,7 +1013,6 @@ footer {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 6px;
-    overflow: hidden;
     margin-bottom: 30px;
     color: #1A1A1A;
     transition: all .3s; }
