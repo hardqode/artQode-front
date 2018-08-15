@@ -26,10 +26,14 @@
                                 <div class="col-11 col-lg">
                                     <h2>Авторизация</h2>
                                     <label for="login-input">Логин</label>
-                                    <input type="text" class="custom-input" id="login-input">
+                                    <div class="custom-input">
+                                        <input type="text" id="login-input">
+                                        <span class="error-msg">1</span>
+                                    </div>
                                     <label for="password-input">Пароль</label>
-                                    <div class="password-input-container">
-                                        <input type="password" class="custom-input" id="password-input">
+                                    <div class="password-input-container custom-input">
+                                        <input type="password"  id="password-input">
+                                        <span class="error-msg">1</span>
                                         <button class="btn-icon" btn-role="show-password">
                                             <img src="./assets/svg/show-password.svg" alt="">
                                         </button>
@@ -67,12 +71,19 @@
                                 <div class="col">
                                     <h2>Регистрация</h2>
                                     <label for="regName">Имя</label>
-                                    <input type="text" class="custom-input" id="regName">
+                                    <div class="custom-input">
+                                        <input type="text" class="" id="regName">
+                                        <span class="error-msg">1</span>
+                                    </div>
                                     <label for="mail">Почта</label>
-                                    <input type="text" class="custom-input" id="mail">
+                                    <div class="custom-input">
+                                        <input type="text" class="" id="mail">
+                                        <span class="error-msg">1</span>
+                                    </div>
                                     <label for="regPassword">Пароль</label>
-                                    <div class="password-input-container">
-                                        <input type="password" class="custom-input" id="regPassword">
+                                    <div class="password-input-container custom-input">
+                                        <input type="password" class="" id="regPassword">
+                                        <span class="error-msg">1</span>
                                         <button class="btn-icon" btn-role="show-password">
                                             <img src="./assets/svg/show-password.svg" alt="">
                                         </button>
@@ -121,9 +132,15 @@
                                     <div class="col">
                                         <h2>Написать сообщение</h2>
                                         <label for="messageEmail">Email</label>
-                                        <input type="text" class="custom-input" id="messageEmail">
+                                        <div class="custom-input">
+                                            <input type="text" class="" id="messageEmail">
+                                            <span class="error-msg">1</span>
+                                        </div>
                                         <label for="msg">Сообщение</label>
-                                        <textarea id="msg" class="custom-input" rows="5"></textarea>
+                                        <div class="custom-input">
+                                            <textarea id="msg"  rows="5"></textarea>
+                                            <span class="error-msg">1</span>
+                                        </div>
                                         <button class="button button-red">Отправить</button>
                                     </div>
                                     <div class="col-auto ml-auto px-0">

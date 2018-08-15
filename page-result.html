@@ -32,9 +32,15 @@
                                 <div class="col">
                                     <h2>Новый проект</h2>
                                     <label for="name">Название</label>
-                                    <input type="text" class="custom-input" id="name">
+                                    <div class="custom-input">
+                                        <input type="text" class="" id="name">
+                                        <span class="error-msg">некорректный ввод</span>
+                                    </div>
                                     <label for="description">Описание</label>
-                                    <textarea id="description" class="custom-input" rows="5"></textarea>
+                                    <div class="custom-input">
+                                        <textarea id="description" class="" rows="5"></textarea>
+                                        <span class="error-msg">некорректный ввод</span>
+                                    </div>
                                     <button class="button button-red">Создать</button>
                                 </div>
                                 <div class="col-auto ml-auto px-0">
@@ -53,6 +59,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="notifications-btn-section popup-container">
                 <button class="btn-icon has-updates" popup-target="#notifications">
                     <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">

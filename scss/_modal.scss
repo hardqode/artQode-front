@@ -10,14 +10,14 @@
     border: 0;
     .modal-body {
       padding: 20px 56px 36px;
-      @media (max-width:991px){
+      @media (max-width: 991px) {
         padding: 1px 20px 36px;
       }
       h2 {
         font-size: 36px;
         margin-top: 16px;
         margin-bottom: 24px;
-        &.fsz-24{
+        &.fsz-24 {
           font-size: 24px;
           font-weight: 600;
         }
@@ -36,9 +36,9 @@
         margin-bottom: 25px;
         padding-top: 20px;
       }
-      .password-input-container{
+      .password-input-container {
         position: relative;
-        .btn-icon{
+        .btn-icon {
           padding: 0;
           position: absolute;
           right: 16px;
@@ -47,11 +47,11 @@
           margin: auto;
         }
       }
-      .subtext{
+      .subtext {
         font-size: 14px;
         margin: 0;
       }
-      .link{
+      .link {
         margin-right: 0;
         margin-bottom: 0;
         font-size: 14px;
@@ -59,18 +59,71 @@
         width: auto;
       }
       .custom-input {
-        padding-left: 20px;
-        min-height: 48px;
-        border: 1px solid rgba(0, 0, 0, .14);
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-size: 14px;
-        color:#1a1a1a;
-        &:hover,&:focus{
-          border: 1px solid rgba(0, 0, 0, 0.2);
+        position: relative;
+
+        input {
+          padding-left: 20px;
+          min-height: 48px;
+          border: 1px solid rgba(0, 0, 0, .14);
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: 14px;
+          color: #1a1a1a;
+          &:hover, &:focus {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+          }
+          + .error-msg {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #D81D1D;
+          }
+          &.error {
+            border: 1px solid #D81D1D;
+            + .error-msg {
+              display: block;
+
+            }
+          }
+
+        }
+        textarea {
+          padding-left: 20px;
+          min-height: 48px;
+          border: 1px solid rgba(0, 0, 0, .14);
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: 14px;
+          color: #1a1a1a;
+          &:hover, &:focus {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+          }
+          + .error-msg {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 16px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #D81D1D;
+          }
+          &.error {
+            border: 1px solid #D81D1D;
+            + .error-msg {
+              display: block;
+
+            }
+          }
         }
       }
-      .button-red{
+      .button-red {
         font-size: 14px;
         padding-top: 16px;
         padding-bottom: 17px;

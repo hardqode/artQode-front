@@ -680,15 +680,55 @@ header {
         font-weight: 400;
         width: auto; }
       .modal-dialog .modal-content .modal-body .custom-input {
-        padding-left: 20px;
-        min-height: 48px;
-        border: 1px solid rgba(0, 0, 0, 0.14);
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-size: 14px;
-        color: #1a1a1a; }
-        .modal-dialog .modal-content .modal-body .custom-input:hover, .modal-dialog .modal-content .modal-body .custom-input:focus {
-          border: 1px solid rgba(0, 0, 0, 0.2); }
+        position: relative; }
+        .modal-dialog .modal-content .modal-body .custom-input input {
+          padding-left: 20px;
+          min-height: 48px;
+          border: 1px solid rgba(0, 0, 0, 0.14);
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: 14px;
+          color: #1a1a1a; }
+          .modal-dialog .modal-content .modal-body .custom-input input:hover, .modal-dialog .modal-content .modal-body .custom-input input:focus {
+            border: 1px solid rgba(0, 0, 0, 0.2); }
+          .modal-dialog .modal-content .modal-body .custom-input input + .error-msg {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #D81D1D; }
+          .modal-dialog .modal-content .modal-body .custom-input input.error {
+            border: 1px solid #D81D1D; }
+            .modal-dialog .modal-content .modal-body .custom-input input.error + .error-msg {
+              display: block; }
+        .modal-dialog .modal-content .modal-body .custom-input textarea {
+          padding-left: 20px;
+          min-height: 48px;
+          border: 1px solid rgba(0, 0, 0, 0.14);
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: 14px;
+          color: #1a1a1a; }
+          .modal-dialog .modal-content .modal-body .custom-input textarea:hover, .modal-dialog .modal-content .modal-body .custom-input textarea:focus {
+            border: 1px solid rgba(0, 0, 0, 0.2); }
+          .modal-dialog .modal-content .modal-body .custom-input textarea + .error-msg {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 16px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #D81D1D; }
+          .modal-dialog .modal-content .modal-body .custom-input textarea.error {
+            border: 1px solid #D81D1D; }
+            .modal-dialog .modal-content .modal-body .custom-input textarea.error + .error-msg {
+              display: block; }
       .modal-dialog .modal-content .modal-body .button-red {
         font-size: 14px;
         padding-top: 16px;
