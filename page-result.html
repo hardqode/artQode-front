@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta content="width = device-width,initial-scale=1" name="viewport">
     <title>ArtQode</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300i,500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,300i,500,500i,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/nouislider.min.css">
@@ -63,7 +63,8 @@
             </div>
             <button class="btn-icon mobile-search-btn">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 18.0383L14.7877 12.8675C15.768 11.53 16.3476 9.885 16.3476 8.10833C16.3476 3.6375 12.6809 0 8.17338 0C3.66668 0 0 3.6375 0 8.10833C0 12.58 3.66668 16.2167 8.17338 16.2167C9.88198 16.2167 11.4688 15.6942 12.7826 14.8017L18.0226 20L20 18.0383ZM2.39741 8.10833C2.39741 4.94833 4.98887 2.3775 8.17422 2.3775C11.3596 2.3775 13.951 4.94833 13.951 8.10833C13.951 11.2683 11.3596 13.8392 8.17422 13.8392C4.98803 13.8392 2.39741 11.2683 2.39741 8.10833Z" fill="#1A1A1A"/>
+                    <path d="M20 18.0383L14.7877 12.8675C15.768 11.53 16.3476 9.885 16.3476 8.10833C16.3476 3.6375 12.6809 0 8.17338 0C3.66668 0 0 3.6375 0 8.10833C0 12.58 3.66668 16.2167 8.17338 16.2167C9.88198 16.2167 11.4688 15.6942 12.7826 14.8017L18.0226 20L20 18.0383ZM2.39741 8.10833C2.39741 4.94833 4.98887 2.3775 8.17422 2.3775C11.3596 2.3775 13.951 4.94833 13.951 8.10833C13.951 11.2683 11.3596 13.8392 8.17422 13.8392C4.98803 13.8392 2.39741 11.2683 2.39741 8.10833Z"
+                          fill="#1A1A1A"/>
                 </svg>
             </button>
             <div class="notifications-btn-section popup-container">
@@ -113,7 +114,6 @@
 </header>
 
 
-
 <section class="site-nav">
     <div class="container site-nav--container">
         <a href="index.html" class="site-nav--item">Все проекты</a>
@@ -122,7 +122,7 @@
     </div>
 </section>
 
-<section class="result-controls-section">
+<section class="result-controls-section d-none d-lg-block">
     <div class="container">
         <div class="row result-controls--row">
 
@@ -148,7 +148,7 @@
                     <div class="col-auto checkbox--col">
                         <div class="checkbox-container">
                             <input type="checkbox" id="contures" checked>
-                            <label for="contures" class="custom-checkbox" >Контуры</label>
+                            <label for="contures" class="custom-checkbox">Контуры</label>
                         </div>
 
                     </div>
@@ -168,11 +168,24 @@
     </div>
 
 </section>
-<section class="result-section">
+<section class="result-section  d-none d-lg-block">
     <div class="container">
-        <img src="./assets/contures/design.png"  slider-target="design" alt="">
+        <img src="./assets/contures/design.png" slider-target="design" alt="">
         <img src="./assets/contures/verstka.png" slider-target="verstka" alt="">
         <img src="./assets/contures/контуры.png" slider-target="contures" alt="">
+    </div>
+</section>
+<section class="result-section mobile-msg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <p class="result-mobile">
+                    76%
+                </p>
+                <p class="error-text">Извините, функционал данной страницы доступен только для ПК-версии</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -207,15 +220,15 @@
             'max': 100
         }
     });
-    slider.noUiSlider.on('update',function () {
-       var val = slider.noUiSlider.get() / 100;
+    slider.noUiSlider.on('update', function () {
+        var val = slider.noUiSlider.get() / 100;
 
-       $('[slider-target="verstka"]').css('opacity',val);
+        $('[slider-target="verstka"]').css('opacity', val);
     });
-    $('label[for="contures"]').on('click',function () {
-        if($('#contures').prop('checked')){
+    $('label[for="contures"]').on('click', function () {
+        if ($('#contures').prop('checked')) {
             $('[slider-target="contures"]').hide();
-        }else{
+        } else {
             $('[slider-target="contures"]').show();
         }
     })
@@ -229,12 +242,12 @@
     })
 </script>
 <script>
-    $(document).on('scroll',function () {
-       if($(this).scrollTop() > 155){
-           $('.result-controls-section').addClass('fixed-controls');
-       }else{
-           $('.result-controls-section').removeClass('fixed-controls');
-       }
+    $(document).on('scroll', function () {
+        if ($(this).scrollTop() > 155) {
+            $('.result-controls-section').addClass('fixed-controls');
+        } else {
+            $('.result-controls-section').removeClass('fixed-controls');
+        }
     })
 </script>
 <script>
@@ -265,21 +278,21 @@
 
 </script>
 <script>
-    $('.global-search').on('keydown keyup',function () {
+    $('.global-search').on('keydown keyup', function () {
         var clear = $(this).parent().find('.clear-icon');
-        if($(this).val() !== ''){
+        if ($(this).val() !== '') {
             clear.addClass('show');
-        }else{
+        } else {
             clear.removeClass('show');
         }
     })
-    $('.global-search-container .clear-icon').on('click',function () {
+    $('.global-search-container .clear-icon').on('click', function () {
         $('.global-search').val('');
         $(this).removeClass('show');
     })
 </script>
 <script>
-    $('.mobile-search-btn').on('click',function () {
+    $('.mobile-search-btn').on('click', function () {
         $(this).toggleClass('active');
         $('.mobile-global-search').toggleClass('show');
     })

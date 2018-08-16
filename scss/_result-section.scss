@@ -24,4 +24,39 @@
       }
     }
   }
+  .result-mobile{
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 44px;
+    text-align: center;
+    color: $black;
+    position: relative;
+    margin-bottom: 48px;
+    &:after{
+      position: absolute;
+      content:'соответствия';
+      left: 0;
+      right:0;
+      bottom:-13px;
+      margin: auto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 13px;
+      text-align: center;
+      color: #1A1A1A;
+      opacity: 0.5;
+    }
+  }
+  .error-text{
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 16px;
+    text-align: center;
+    color: $black;
+    width: 257px;
+    margin: auto;
+  }
 }

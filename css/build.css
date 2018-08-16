@@ -1041,6 +1041,38 @@ header {
         z-index: 2; }
       .result-section .container img.contures {
         z-index: 3; }
+  .result-section .result-mobile {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 44px;
+    text-align: center;
+    color: #1A1A1A;
+    position: relative;
+    margin-bottom: 48px; }
+    .result-section .result-mobile:after {
+      position: absolute;
+      content: 'соответствия';
+      left: 0;
+      right: 0;
+      bottom: -13px;
+      margin: auto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 13px;
+      text-align: center;
+      color: #1A1A1A;
+      opacity: 0.5; }
+  .result-section .error-text {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 16px;
+    text-align: center;
+    color: #1A1A1A;
+    width: 257px;
+    margin: auto; }
 
 .checkbox-container input {
   display: none; }
