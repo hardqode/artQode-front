@@ -1,7 +1,7 @@
 .popup-container {
   position: relative;
-  .btn-icon{
-    img{
+  .btn-icon {
+    img:not(.avatar) {
       margin-left: 8px;
     }
   }
@@ -23,33 +23,36 @@
     &.show {
       display: block;
     }
-    &.project-popup{
+    &.project-popup {
       left: 0;
       margin: auto;
       top: -16px;
       width: 164px;
       transform: translateX(-50%);
+      @media (max-width: 991px) {
+        transform: translateX(-100%);
+      }
       font-size: 14px;
-      &:before{
+      &:before {
         display: none;
       }
-      .popup-content{
+      .popup-content {
         left: 0;
         margin: auto;
       }
     }
-    &.popup-info{
+    &.popup-info {
       top: -12px;
-      &:before{
+      &:before {
         display: none;
       }
-      .popup-content{
-        background: rgba(26,26,26,.9);
+      .popup-content {
+        background: rgba(26, 26, 26, .9);
         padding: 6px 12px;
-        transform: translate(30%,-100%);
+        transform: translate(30%, -100%);
         min-width: 153px;
         box-shadow: none;
-        p{
+        p {
           color: white;
           font-style: normal;
           font-weight: 300;
@@ -81,13 +84,18 @@
         height: 224px;
         max-height: 224px;
         position: relative;
+        @media(max-width:991px){
+
+          width: 300px;
+          transform: translateX(20%);
+        }
         .link {
           line-height: 17px;
           padding-right: 42px;
         }
-        &.no-notifications{
+        &.no-notifications {
           position: relative;
-          &:after{
+          &:after {
             content: 'Все оповещения прочитаны';
             position: absolute;
             left: 0;
@@ -115,20 +123,22 @@
         color: #1A1A1A;
         width: 100%;
         line-height: normal;
+        text-align: left;
+        margin-bottom: 0;
         &:hover {
           background: rgba(55, 112, 221, .1);
           text-decoration: none;
 
         }
-        &.link-w-icon{
+        &.link-w-icon {
           padding-left: 42px;
           position: relative;
-          &:hover{
-            img{
+          &:hover {
+            img {
               opacity: .8;
             }
           }
-          img{
+          img {
             position: absolute;
             top: 0;
             bottom: 0;

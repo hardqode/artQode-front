@@ -124,6 +124,9 @@ button {
     padding: 0; }
     .btn-icon.avatar img {
       opacity: 1; }
+  @media (max-width: 991px) {
+    .btn-icon {
+      padding: 0; } }
   .btn-icon.has-updates {
     position: relative; }
     .btn-icon.has-updates:after {
@@ -135,6 +138,10 @@ button {
       background: red;
       top: 5px;
       right: 5px; }
+      @media (max-width: 991px) {
+        .btn-icon.has-updates:after {
+          top: 0;
+          right: -2px; } }
   .btn-icon svg {
     fill: #1A1A1A;
     opacity: .3;
@@ -155,7 +162,7 @@ button {
 
 .popup-container {
   position: relative; }
-  .popup-container .btn-icon img {
+  .popup-container .btn-icon img:not(.avatar) {
     margin-left: 8px; }
   .popup-container .popup {
     padding-top: 12px;
@@ -180,6 +187,9 @@ button {
       width: 164px;
       transform: translateX(-50%);
       font-size: 14px; }
+      @media (max-width: 991px) {
+        .popup-container .popup.project-popup {
+          transform: translateX(-100%); } }
       .popup-container .popup.project-popup:before {
         display: none; }
       .popup-container .popup.project-popup .popup-content {
@@ -223,6 +233,10 @@ button {
         height: 224px;
         max-height: 224px;
         position: relative; }
+        @media (max-width: 991px) {
+          .popup-container .popup .popup-content.notifications {
+            width: 300px;
+            transform: translateX(20%); } }
         .popup-container .popup .popup-content.notifications .link {
           line-height: 17px;
           padding-right: 42px; }
@@ -250,7 +264,9 @@ button {
         padding-left: 16px;
         color: #1A1A1A;
         width: 100%;
-        line-height: normal; }
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 0; }
         .popup-container .popup .popup-content .link:hover {
           background: rgba(55, 112, 221, 0.1);
           text-decoration: none; }
@@ -271,6 +287,10 @@ header {
   min-height: 88px;
   background-color: #fff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.04); }
+  @media (max-width: 991px) {
+    header {
+      padding-top: 20px;
+      padding-bottom: 28px; } }
   header .container {
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +302,10 @@ header {
       margin: auto;
       width: 208px;
       margin-bottom: 32px;
-      margin-top: 26px; } }
+      margin-top: 26px; }
+      header .logo.logged {
+        width: 152px;
+        margin: 0; } }
   header .right-block {
     margin-left: auto;
     width: auto;
@@ -301,9 +324,29 @@ header {
           width: 100%;
           margin-right: 0;
           margin-bottom: 18px; } }
+  header .mobile-search-btn {
+    display: none; }
+    @media (max-width: 991px) {
+      header .mobile-search-btn {
+        display: flex; } }
+    header .mobile-search-btn.active svg {
+      opacity: 1; }
+      header .mobile-search-btn.active svg path {
+        fill: #3770DD; }
+    header .mobile-search-btn:hover svg path {
+      fill: #3770DD; }
+  header .mobile-global-search {
+    display: none; }
+    header .mobile-global-search.show {
+      display: block; }
   header .global-search-container {
     position: relative;
     margin-right: 16px; }
+    @media (max-width: 991px) {
+      header .global-search-container {
+        margin-top: 20px;
+        margin-right: 0;
+        width: 100%; } }
     header .global-search-container .clear-icon {
       display: none;
       position: absolute;
@@ -321,6 +364,9 @@ header {
       border: 1px solid rgba(0, 0, 0, 0.14);
       border-radius: 3px;
       padding-left: 48px; }
+      @media (max-width: 991px) {
+        header .global-search-container .global-search {
+          width: 100%; } }
       header .global-search-container .global-search:hover {
         border: 1px solid rgba(0, 0, 0, 0.3); }
       header .global-search-container .global-search:focus {
@@ -350,12 +396,21 @@ header {
   header .notifications-btn-section {
     margin-left: 40px;
     position: relative; }
+    @media (max-width: 991px) {
+      header .notifications-btn-section {
+        margin-left: 16px; } }
   header .avatar-section {
     margin-left: 24px; }
+    @media (max-width: 991px) {
+      header .avatar-section {
+        margin-left: 16px; } }
     header .avatar-section .avatar {
       width: 40px;
       height: 40px;
       border-radius: 100%; }
+  @media (max-width: 991px) {
+    header .button-blue {
+      margin: 24px auto 0; } }
 
 .landing-section {
   background: white;
@@ -1098,6 +1153,9 @@ footer {
     margin-bottom: 30px;
     color: #1A1A1A;
     transition: all .3s; }
+    @media (max-width: 991px) {
+      .projects-section .project-section--container .project-section--item {
+        margin: auto auto 32px auto; } }
     .projects-section .project-section--container .project-section--item:hover {
       cursor: pointer;
       color: #2360D6; }
@@ -1117,6 +1175,11 @@ footer {
         font-weight: 600;
         line-height: 23px;
         font-size: 16px; }
+        @media (max-width: 991px) {
+          .projects-section .project-section--container .project-section--item .project-section--item--description-container .project-section--item--heading {
+            white-space: nowrap;
+            max-width: 248px;
+            text-overflow: ellipsis; } }
       .projects-section .project-section--container .project-section--item .project-section--item--description-container .project-section--item--text {
         max-height: 37px;
         overflow: hidden;

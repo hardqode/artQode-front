@@ -2,7 +2,10 @@ header {
   min-height: 88px;
   background-color: #fff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.04);
-
+  @media(max-width: 991px) {
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -12,16 +15,20 @@ header {
   }
   .logo {
     @media (max-width: 991px) {
-      margin: auto;
 
+      margin: auto;
       width: 208px;
+      &.logged {
+        width: 152px;
+        margin: 0;
+      }
       margin-bottom: 32px;
       margin-top: 26px;
     }
   }
   .right-block {
     margin-left: auto;
-    width:auto;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -40,33 +47,70 @@ header {
     }
 
   }
+  .mobile-search-btn{
+    display: none;
+    @media( max-width:991px){
+      display: flex;
+    }
+    &.active{
+      svg{
+        opacity: 1 ;
+        path{
+          fill:#3770DD;
+
+        }
+      }
+    }
+    &:hover{
+      svg{
+        path{
+          fill:#3770DD;
+
+        }
+      }
+    }
+  }
+  .mobile-global-search{
+    display: none;
+    &.show{
+      display: block;
+    }
+  }
   .global-search-container {
     position: relative;
     margin-right: 16px;
-    .clear-icon{
+    @media(max-width:991px){
+      margin-top: 20px;
+      margin-right: 0;
+      width: 100%;
+    }
+    .clear-icon {
       display: none;
       position: absolute;
       right: 16px;
       top: 0;
       bottom: 0;
       cursor: pointer;
-      &.show{
+      &.show {
         display: flex;
       }
-      img{
+      img {
         margin: auto;
       }
     }
-    .global-search{
+    .global-search {
       width: 392px;
       height: 48px;
       border: 1px solid rgba(0, 0, 0, 0.14);
       border-radius: 3px;
       padding-left: 48px;
-      &:hover{
+      @media(max-width:991px){
+        width: 100%;
+      }
+      &:hover {
         border: 1px solid rgba(0, 0, 0, 0.3);
       }
-      &:focus{
+      &:focus {
         border: 1px solid #3770DD;
 
       }
@@ -99,18 +143,27 @@ header {
       }
     }
   }
-  .notifications-btn-section{
+  .notifications-btn-section {
     margin-left: 40px;
     position: relative;
-    .btn-icon{
+    @media(max-width:991px){
+      margin-left: 16px;
     }
   }
-  .avatar-section{
+  .avatar-section {
     margin-left: 24px;
+    @media(max-width:991px){
+      margin-left: 16px;
+    }
     .avatar {
       width: 40px;
       height: 40px;
       border-radius: 100%;
+    }
+  }
+  .button-blue{
+    @media(max-width:991px){
+      margin:24px auto 0;
     }
   }
 }

@@ -64,6 +64,9 @@ button {
       opacity: 1;
     }
   }
+  @media(max-width: 991px){
+    padding: 0;
+  }
   &.has-updates {
     position: relative;
     &:after {
@@ -75,6 +78,11 @@ button {
       background: red;
       top: 5px;
       right: 5px;
+
+      @media(max-width: 991px){
+        top: 0;
+        right: -2px;
+      }
     }
   }
   svg {

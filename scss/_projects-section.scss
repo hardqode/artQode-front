@@ -15,6 +15,9 @@
       margin-bottom: 30px;
       color: $black;
       transition: all .3s;
+      @media(max-width:991px){
+        margin: auto auto 32px auto;
+      }
       &:hover {
         cursor: pointer;
         color: #2360D6;
@@ -36,6 +39,11 @@
           font-weight: 600;
           line-height: 23px;
           font-size: 16px;
+          @media(max-width: 991px) {
+            white-space: nowrap;
+            max-width: 248px;
+            text-overflow: ellipsis;
+          }
         }
         .project-section--item--text {
           max-height: 37px;

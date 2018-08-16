@@ -16,14 +16,16 @@
 <body>
 <header>
     <div class="container">
-        <img src="./assets/svg/logo.svg" class="logo" alt="">
+        <img src="./assets/svg/logo.svg" class="logo logged" alt="">
         <div class="right-block">
-            <div class="global-search-container">
+            <div class="global-search-container d-none d-lg-block">
                 <img src="./assets/svg/search-icon.svg" class="icon" alt="">
                 <input type="text" class="global-search" placeholder="Поиск по названию...">
-                <a  role="button" class="clear-icon"> <img src="./assets/svg/clear.svg" alt=""></a>
+                <a role="button" class="clear-icon"> <img src="./assets/svg/clear.svg" alt=""></a>
             </div>
-            <button class="button button-blue" data-toggle="modal" data-target="#newProjectModal">Новый проект</button>
+            <button class="button button-blue d-none d-lg-block" data-toggle="modal" data-target="#newProjectModal">
+                Новый проект
+            </button>
             <div class="modal fade" id="newProjectModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -59,7 +61,11 @@
                     </div>
                 </div>
             </div>
-
+            <button class="btn-icon mobile-search-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 18.0383L14.7877 12.8675C15.768 11.53 16.3476 9.885 16.3476 8.10833C16.3476 3.6375 12.6809 0 8.17338 0C3.66668 0 0 3.6375 0 8.10833C0 12.58 3.66668 16.2167 8.17338 16.2167C9.88198 16.2167 11.4688 15.6942 12.7826 14.8017L18.0226 20L20 18.0383ZM2.39741 8.10833C2.39741 4.94833 4.98887 2.3775 8.17422 2.3775C11.3596 2.3775 13.951 4.94833 13.951 8.10833C13.951 11.2683 11.3596 13.8392 8.17422 13.8392C4.98803 13.8392 2.39741 11.2683 2.39741 8.10833Z" fill="#1A1A1A"/>
+                </svg>
+            </button>
             <div class="notifications-btn-section popup-container">
                 <button class="btn-icon has-updates" popup-target="#notifications">
                     <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +75,8 @@
                 </button>
 
                 <div class="popup" id="notifications">
-                    <div class="popup-content notifications "> <!-- add class no-notifications and remove all links to see empty list -->
+                    <div class="popup-content notifications ">
+                        <!-- add class no-notifications and remove all links to see empty list -->
                         <a href="#" class="link">Задача организации, в особенности же дальнейшее развитие различных форм
                             деятельности позволяет оценить значение соответствующий условий активизации. Постоянное
                             информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа.</a>
@@ -91,11 +98,20 @@
                     </div>
                 </div>
             </div>
+
         </div>
+        <div class="global-search-container mobile-global-search">
+            <img src="./assets/svg/search-icon.svg" class="icon" alt="">
+            <input type="text" class="global-search" placeholder="Поиск по названию...">
+            <a role="button" class="clear-icon"> <img src="./assets/svg/clear.svg" alt=""></a>
+        </div>
+        <button class="button button-blue  d-lg-none" data-toggle="modal" data-target="#newProjectModal">Новый проект
+        </button>
 
     </div>
 
 </header>
+
 
 
 <section class="site-nav">
