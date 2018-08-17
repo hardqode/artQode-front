@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width,initial-scale=1" name="viewport">
+    <title>ArtQode</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,500,600,500i,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/build.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <img src="./assets/svg/logo.svg" class="logo logged" alt="">
+        <div class="right-block">
+            <div class="global-search-container d-none d-lg-block">
+                <img src="./assets/svg/search-icon.svg" class="icon" alt="">
+                <input type="text" class="global-search" placeholder="Поиск по названию...">
+                <a role="button" class="clear-icon"> <img src="./assets/svg/clear.svg" alt=""></a>
+            </div>
+            <button class="button button-blue d-none d-lg-block" data-toggle="modal" data-target="#newProjectModal">
+                Новый проект
+            </button>
+            <div class="modal fade" id="newProjectModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h2>Новый проект</h2>
+                                    <label for="name">Название</label>
+                                    <div class="custom-input">
+                                        <input type="text" class="" id="name">
+                                        <span class="error-msg">некорректный ввод</span>
+                                    </div>
+                                    <label for="description">Описание</label>
+                                    <div class="custom-input">
+                                        <textarea id="description" class="" rows="5"></textarea>
+                                        <span class="error-msg">некорректный ввод</span>
+                                    </div>
+                                    <button class="button button-red">Создать</button>
+                                </div>
+                                <div class="col-auto ml-auto px-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 14.0507L9.87733 7.98733L15.9387 1.87133L14.0507 0L7.99067 6.11933L1.87333 0.0606667L0 1.934L6.124 8.004L0.0606667 14.1267L1.934 16L8.00867 9.872L14.1287 15.9387L16 14.0507Z"
+                                          fill="black"/>
+                                    </svg>
+                                </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-icon mobile-search-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 18.0383L14.7877 12.8675C15.768 11.53 16.3476 9.885 16.3476 8.10833C16.3476 3.6375 12.6809 0 8.17338 0C3.66668 0 0 3.6375 0 8.10833C0 12.58 3.66668 16.2167 8.17338 16.2167C9.88198 16.2167 11.4688 15.6942 12.7826 14.8017L18.0226 20L20 18.0383ZM2.39741 8.10833C2.39741 4.94833 4.98887 2.3775 8.17422 2.3775C11.3596 2.3775 13.951 4.94833 13.951 8.10833C13.951 11.2683 11.3596 13.8392 8.17422 13.8392C4.98803 13.8392 2.39741 11.2683 2.39741 8.10833Z"
+                          fill="#1A1A1A"/>
+                </svg>
+            </button>
+            <div class="notifications-btn-section popup-container">
+                <button class="btn-icon has-updates" popup-target="#notifications">
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 21C13 22.598 11.608 24 10.029 24C8.45 24 7 22.598 7 21H13ZM13.137 3.945C12.493 3.571 12.095 2.875 12.096 2.125V2.122C12.097 0.95 11.158 0 10 0C8.842 0 7.903 0.95 7.903 2.122V2.125C7.904 2.876 7.507 3.571 6.862 3.945C2.194 6.654 4.877 15.66 0 17.251V19H20V17.251C15.123 15.66 17.807 6.653 13.137 3.945ZM10 1C10.552 1 11 1.449 11 2C11 2.552 10.552 3 10 3C9.448 3 9 2.552 9 2C9 1.449 9.448 1 10 1ZM3.549 17C4.738 15.333 5.154 13.109 5.513 11.185C5.96 8.795 6.382 6.537 7.867 5.676C9.247 4.875 10.823 4.916 12.134 5.676C13.619 6.537 14.041 8.795 14.488 11.185C14.847 13.109 15.263 15.333 16.452 17H3.549Z"
+                              fill="#1A1A1A"/>
+                    </svg>
+                </button>
+
+                <div class="popup" id="notifications">
+                    <div class="popup-content notifications ">
+                        <!-- add class no-notifications and remove all links to see empty list -->
+                        <a href="#" class="link">Задача организации, в особенности же дальнейшее развитие различных форм
+                            деятельности позволяет оценить значение соответствующий условий активизации. Постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа.</a>
+                        <a href="#" class="link">Разнообразный и богатый опыт сложившаяся структура организации
+                            позволяет выполнять важные задания по разработке соответствующий условий активизации. </a>
+                        <a href="#" class="link">Равным образом рамки и место обучения кадров играет важную роль в
+                            формировании соответствующий условий активизации.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="avatar-section popup-container">
+                <button class="btn-icon avatar" popup-target="#lkMenu">
+                    <img src="./assets/avatar.png" class="avatar" alt="">
+                </button>
+                <div class="popup" id="lkMenu">
+                    <div class="popup-content lk">
+                        <a href="#" class="link">Профиль</a>
+                        <a href="#" class="link">Войти</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="global-search-container mobile-global-search">
+            <img src="./assets/svg/search-icon.svg" class="icon" alt="">
+            <input type="text" class="global-search" placeholder="Поиск по названию...">
+            <a role="button" class="clear-icon"> <img src="./assets/svg/clear.svg" alt=""></a>
+        </div>
+        <button class="button button-blue  d-lg-none" data-toggle="modal" data-target="#newProjectModal">Новый проект
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="my-account--section">
+    <div class="container">
+        <div class="row align-items-center avatar-row">
+            <div class="col-auto user-avatar-col">
+                <img src="./assets/avarat-tmplt.png" alt="" class="user-avatar">
+            </div>
+            <div class="col-auto ">
+                <button class="button button-blue-outline" onclick="$('#avatar-src').click()">Загрузить фотографию
+                </button>
+                <input type="file" hidden id="avatar-src">
+            </div>
+            <div class="col-auto img-text-name-col">
+                <span class="img-text-name"> <span class="file-name">avatar.jpg</span>
+                    <button class="btn-icon p-0">
+                        <svg width="12" height="12"
+                             viewBox="0 0 12 12" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+<path d="M12 10.538L7.408 5.9905L11.954 1.4035L10.538 0L5.993 4.5895L1.405 0.0455L0 1.4505L4.593 6.003L0.0455 10.595L1.4505 12L6.0065 7.404L10.5965 11.954L12 10.538Z"
+      fill="#D81D1D"/>
+</svg>
+                    </button>
+                </span>
+            </div>
+            <div class="col-auto ml-auto d-none d-lg-block">
+                <button class="button button-red">Сохранить изменения</button>
+            </div>
+        </div>
+        <div class="row name-row">
+            <div class="col-12 col-lg-5 pr-lg-0">
+                <h3>Информация</h3>
+                <label for="lk-name">Имя</label>
+                <div class="custom-input">
+                    <input type="text" class="" id="lk-name">
+                    <span class="error-msg">некорректный ввод</span>
+                </div>
+                <label for="lk-surname">Фамилия</label>
+                <div class="custom-input">
+                    <input type="text" class="" id="lk-surname">
+                    <span class="error-msg">некорректный ввод</span>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-12 col-lg-5 pr-lg-0">
+                <h3>Сменить пароль</h3>
+                <label for="oldPassword">Нынешний пароль</label>
+                <div class="password-input-container custom-input">
+                    <input type="password" class="" id="oldPassword">
+                    <span class="error-msg">1</span>
+                    <button class="btn-icon" btn-role="show-password">
+                        <img src="./assets/svg/show-password.svg" alt="">
+                    </button>
+                </div>
+                <label for="newPassowrd">Новый пароль</label>
+                <div class="password-input-container custom-input">
+                    <input type="password" class="" id="newPassowrd">
+                    <span class="error-msg">1</span>
+                    <button class="btn-icon" btn-role="show-password">
+                        <img src="./assets/svg/show-password.svg" alt="">
+                    </button>
+                </div>
+                <label for="acceptPassword">Подтвердите пароль</label>
+                <div class="password-input-container custom-input">
+                    <input type="password" class="" id="acceptPassword">
+                    <span class="error-msg">1</span>
+                    <button class="btn-icon" btn-role="show-password">
+                        <img src="./assets/svg/show-password.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="col-auto d-lg-none mb-5">
+                <button class="button button-red">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="container footer-container">
+        <p class="copyright">© 2018, ArtQode</p>
+        <a href="#" class="link">Политика конфиденциальности</a>
+        <a href="#" class="link">Связаться с нами</a>
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="js/passwordToggle.js"></script>
+<script>
+    //popup showing case
+
+    $('[popup-target]').on('click', function () {
+        var trgt = $(this).attr('popup-target');
+        console.log($(trgt));
+        $(trgt).toggleClass('show');
+        var clickContainer = $(this).parent();
+        $(function () {
+
+            var $win = $(window); // or $box parent container
+            var $box = $(clickContainer);
+
+            $win.on("click.Bst", function (event) {
+                if ($box.has(event.target).length == 0 && !$box.is(event.target)) {
+                    $(trgt).toggleClass('show');
+                    $win.off('click');
+                    // $log.text("you clicked outside the box");
+                } else {
+
+                }
+            });
+
+        });
+    });
+
+</script>
+<script>
+    $('.global-search').on('keydown keyup', function () {
+        var clear = $(this).parent().find('.clear-icon');
+        if ($(this).val() !== '') {
+            clear.addClass('show');
+        } else {
+            clear.removeClass('show');
+        }
+    })
+    $('.global-search-container .clear-icon').on('click', function () {
+        $('.global-search').val('');
+        $(this).removeClass('show');
+    })
+</script>
+<script>
+    $('.mobile-search-btn').on('click', function () {
+        $(this).toggleClass('active');
+        $('.mobile-global-search').toggleClass('show');
+    })
+</script>
+</body>
+</html>

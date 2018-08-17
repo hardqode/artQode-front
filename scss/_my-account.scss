@@ -1,0 +1,44 @@
+.my-account--section {
+  padding-top: 40px;
+  h3{
+    margin-bottom: 24px;
+  }
+  .avatar-row{
+    margin-bottom: 41px;
+  }
+  .name-row{
+    margin-bottom: 48px;
+  }
+  .user-avatar-col {
+    padding-right: 9px;
+    .user-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 100%;
+      @media(max-width:991px){
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .button-blue-outline{
+    padding: 15px;
+    font-size: 14px;
+  }
+  .button-red{
+    padding: 15px;
+    font-size: 14px;
+  }
+  .custom-input{
+    padding-bottom: 16px;
+  }
+  .img-text-name-col{
+    padding-top: 5px;
+    .img-text-name{
+      display: flex;
+      button{
+        margin-left: 12px;
+      }
+    }
+  }
+}

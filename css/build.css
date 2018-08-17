@@ -27,6 +27,13 @@ h2 {
       font-size: 22px;
       line-height: normal; } }
 
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  color: #1A1A1A; }
+
 p {
   font-weight: 300;
   line-height: 29px;
@@ -749,60 +756,71 @@ header {
         font-size: 14px;
         font-weight: 400;
         width: auto; }
-      .modal-dialog .modal-content .modal-body .custom-input {
-        position: relative; }
-        .modal-dialog .modal-content .modal-body .custom-input input {
-          padding-left: 20px;
-          min-height: 48px;
-          border: 1px solid rgba(0, 0, 0, 0.14);
-          box-sizing: border-box;
-          border-radius: 3px;
-          font-size: 14px;
-          color: #1a1a1a; }
-          .modal-dialog .modal-content .modal-body .custom-input input:hover, .modal-dialog .modal-content .modal-body .custom-input input:focus {
-            border: 1px solid rgba(0, 0, 0, 0.2); }
-          .modal-dialog .modal-content .modal-body .custom-input input + .error-msg {
-            display: none;
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            font-style: normal;
-            font-weight: normal;
-            line-height: normal;
-            font-size: 12px;
-            color: #D81D1D; }
-          .modal-dialog .modal-content .modal-body .custom-input input.error {
-            border: 1px solid #D81D1D; }
-            .modal-dialog .modal-content .modal-body .custom-input input.error + .error-msg {
-              display: block; }
-        .modal-dialog .modal-content .modal-body .custom-input textarea {
-          padding-left: 20px;
-          min-height: 48px;
-          border: 1px solid rgba(0, 0, 0, 0.14);
-          box-sizing: border-box;
-          border-radius: 3px;
-          font-size: 14px;
-          color: #1a1a1a; }
-          .modal-dialog .modal-content .modal-body .custom-input textarea:hover, .modal-dialog .modal-content .modal-body .custom-input textarea:focus {
-            border: 1px solid rgba(0, 0, 0, 0.2); }
-          .modal-dialog .modal-content .modal-body .custom-input textarea + .error-msg {
-            display: none;
-            position: absolute;
-            right: 0;
-            bottom: 16px;
-            font-style: normal;
-            font-weight: normal;
-            line-height: normal;
-            font-size: 12px;
-            color: #D81D1D; }
-          .modal-dialog .modal-content .modal-body .custom-input textarea.error {
-            border: 1px solid #D81D1D; }
-            .modal-dialog .modal-content .modal-body .custom-input textarea.error + .error-msg {
-              display: block; }
       .modal-dialog .modal-content .modal-body .button-red {
         font-size: 14px;
         padding-top: 16px;
         padding-bottom: 17px; }
+
+.custom-input {
+  position: relative; }
+  .custom-input.password-input-container {
+    position: relative; }
+    .custom-input.password-input-container .btn-icon {
+      padding: 0;
+      position: absolute;
+      right: 16px;
+      top: -16px;
+      bottom: 0;
+      margin: auto; }
+  .custom-input input {
+    padding-left: 20px;
+    min-height: 48px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #1a1a1a;
+    width: 100%; }
+    .custom-input input:hover, .custom-input input:focus {
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+    .custom-input input + .error-msg {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 12px;
+      color: #D81D1D; }
+    .custom-input input.error {
+      border: 1px solid #D81D1D; }
+      .custom-input input.error + .error-msg {
+        display: block; }
+  .custom-input textarea {
+    padding-left: 20px;
+    min-height: 48px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #1a1a1a; }
+    .custom-input textarea:hover, .custom-input textarea:focus {
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+    .custom-input textarea + .error-msg {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 12px;
+      color: #D81D1D; }
+    .custom-input textarea.error {
+      border: 1px solid #D81D1D; }
+      .custom-input textarea.error + .error-msg {
+        display: block; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 16px;
@@ -1213,6 +1231,39 @@ header {
     display: none; }
   .noUi-horizontal .noUi-handle:before {
     display: none; }
+
+.my-account--section {
+  padding-top: 40px; }
+  .my-account--section h3 {
+    margin-bottom: 24px; }
+  .my-account--section .avatar-row {
+    margin-bottom: 41px; }
+  .my-account--section .name-row {
+    margin-bottom: 48px; }
+  .my-account--section .user-avatar-col {
+    padding-right: 9px; }
+    .my-account--section .user-avatar-col .user-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 100%; }
+      @media (max-width: 991px) {
+        .my-account--section .user-avatar-col .user-avatar {
+          width: 80px;
+          height: 80px; } }
+  .my-account--section .button-blue-outline {
+    padding: 15px;
+    font-size: 14px; }
+  .my-account--section .button-red {
+    padding: 15px;
+    font-size: 14px; }
+  .my-account--section .custom-input {
+    padding-bottom: 16px; }
+  .my-account--section .img-text-name-col {
+    padding-top: 5px; }
+    .my-account--section .img-text-name-col .img-text-name {
+      display: flex; }
+      .my-account--section .img-text-name-col .img-text-name button {
+        margin-left: 12px; }
 
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.08); }
