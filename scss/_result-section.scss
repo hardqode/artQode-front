@@ -24,6 +24,11 @@
       }
     }
   }
+  &.mobile-msg{
+    @media(min-width:992px){
+      display: none;
+    }
+  }
   .result-mobile{
     font-style: normal;
     font-weight: 600;

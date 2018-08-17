@@ -62,7 +62,7 @@ p {
         margin: auto;
         opacity: 0.3; }
     .site-nav .site-nav--container .site-nav--item:last-of-type {
-      color: #1a1a1a; }
+      color: rgba(26, 26, 26, 0.5); }
       .site-nav .site-nav--container .site-nav--item:last-of-type:hover {
         color: #1a1a1a; }
     .site-nav .site-nav--container .site-nav--item:hover {
@@ -1041,6 +1041,9 @@ header {
         z-index: 2; }
       .result-section .container img.contures {
         z-index: 3; }
+  @media (min-width: 992px) {
+    .result-section.mobile-msg {
+      display: none; } }
   .result-section .result-mobile {
     font-style: normal;
     font-weight: 600;
