@@ -319,6 +319,9 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 88px; }
+    @media (max-width: 991px) {
+      header .container.landing {
+        justify-content: center; } }
   @media (max-width: 991px) {
     header .logo {
       margin: auto;
@@ -337,6 +340,7 @@ header {
     align-items: center; }
     @media (max-width: 991px) {
       header .right-block {
+        margin-left: 0;
         text-align: center;
         justify-content: center; } }
     header .right-block .link {

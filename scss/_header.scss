@@ -12,10 +12,15 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 88px;
+    &.landing{
+      @media(max-width:991px){
+        justify-content: center;
+      }
+    }
   }
+
   .logo {
     @media (max-width: 991px) {
-
       margin: auto;
       width: 208px;
       &.logged {
@@ -34,6 +39,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     @media (max-width: 991px) {
+      margin-left: 0;
       text-align: center;
       justify-content: center;
     }
