@@ -322,15 +322,16 @@ header {
     @media (max-width: 991px) {
       header .container.landing {
         justify-content: center; } }
-  @media (max-width: 991px) {
-    header .logo {
-      margin: auto;
-      width: 208px;
-      margin-bottom: 32px;
-      margin-top: 26px; }
-      header .logo.logged {
-        width: 152px;
-        margin: 0; } }
+  header .logo {
+    width: 208px; }
+    @media (max-width: 991px) {
+      header .logo {
+        margin: auto;
+        margin-bottom: 32px;
+        margin-top: 26px; }
+        header .logo.logged {
+          width: 152px;
+          margin: 0; } }
   header .right-block {
     margin-left: auto;
     width: auto;

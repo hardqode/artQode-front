@@ -20,9 +20,9 @@ header {
   }
 
   .logo {
+    width: 208px;
     @media (max-width: 991px) {
       margin: auto;
-      width: 208px;
       &.logged {
         width: 152px;
         margin: 0;
