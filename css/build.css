@@ -436,7 +436,9 @@ header {
       border-radius: 100%; }
   @media (max-width: 991px) {
     header .button-blue {
-      margin: 0px auto 0; } }
+      margin: 0px auto 0; }
+      header .button-blue.d-lg-none {
+        margin-top: 24px; } }
 
 .landing-section {
   background: white;

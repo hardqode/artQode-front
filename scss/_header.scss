@@ -167,8 +167,12 @@ header {
     }
   }
   .button-blue{
+
     @media(max-width:991px){
       margin:0px auto 0;
+      &.d-lg-none{
+        margin-top: 24px;
+      }
     }
   }
 }
