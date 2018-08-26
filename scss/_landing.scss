@@ -10,9 +10,13 @@
   padding-top: 52px;
   @media (max-width: 991px) {
     text-align: center;
+    padding-top: 30px;
   }
   h1 {
     margin-bottom: 24px;
+    @media (max-width: 991px) {
+      margin-bottom: 16px;
+    }
   }
   p {
     margin-bottom: 40px;
@@ -20,6 +24,7 @@
       margin-bottom: 32px;
       padding-left: 5px;
       padding-right: 5px;
+      line-height: 24px;
     }
   }
   img {
@@ -28,6 +33,10 @@
       margin-bottom: 48px;
     }
   }
+  .button-red {
+    padding: 19px 32px 17px;
+  }
+
 }
 
 .landing-skills-section {
@@ -52,9 +61,16 @@
     }
     .skill--img {
       margin-bottom: 24px;
+      @media(max-width: 991px) {
+        margin-bottom: 20px;
+      }
     }
     p {
       text-align: center;
+      @media(max-width: 991px) {
+        margin-bottom: 0;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -69,6 +85,7 @@
       text-align: center;
       p {
         margin-bottom: 24px;
+        line-height: 24px;
         &:first-of-type {
           margin-bottom: 0;
         }
@@ -93,6 +110,9 @@
   }
   h1 {
     margin-bottom: 24px;
+    @media (max-width: 991px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -104,16 +124,21 @@
   }
   h1 {
     margin-bottom: 72px;
-    @media (max-width: 991px) {
+    @media(max-width: 991px) {
       margin-bottom: 32px;
     }
   }
   h2 {
     margin-bottom: 6px;
+    @media(max-width: 991px) {
+      margin-bottom: 10px;
+      line-height: 29px;
+    }
   }
   p {
     @media (max-width: 991px) {
       margin-bottom: 24px;
+      line-height: 23px;
     }
   }
 }
@@ -129,9 +154,19 @@
       margin-bottom: 10px;
     }
   }
+  h2 {
+    @media(max-width: 991px) {
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+  }
   @media(max-width: 991px) {
     p {
       margin-bottom: 45px;
+      @media(max-width: 991px) {
+
+        line-height: 23px;
+      }
     }
   }
 
@@ -148,11 +183,19 @@
   @media(max-width: 991px) {
     padding-top: 72px;
     text-align: center;
-    h1 {
+    h2 {
       margin-bottom: 8px;
+      @media(max-width: 991px) {
+        line-height: 29px;
+        margin-bottom: 9px;
+      }
     }
     p {
       margin-bottom: 24px;
+      @media(max-width: 991px) {
+        line-height: 23px;
+        margin-bottom: 25px;
+      }
     }
   }
 }
@@ -163,21 +206,29 @@
     padding-top: 72px;
     padding-bottom: 88px;
     text-align: center;
-    h1 {
+    h2 {
       margin-bottom: 8px;
+      @media(max-width: 991px) {
+        line-height: 29px;
+        margin-bottom: 9px;
+      }
     }
     p {
       margin-bottom: 24px;
+      @media(max-width: 991px) {
+        line-height: 23px;
+        margin-bottom: 25px;
+      }
     }
   }
 }
 
 .landing-rates-section {
   padding-top: 64px;
-  padding-bottom: 96px;
+  padding-bottom: 72px;
   @media(max-width: 991px) {
     padding-top: 40px;
-    padding-bottom: 64px;
+    padding-bottom: 40px;
     text-align: center;
     h1 {
       margin-bottom: 32px;
@@ -192,6 +243,10 @@
   h1 {
     margin-bottom: 48px;
     text-align: center;
+    @media(max-width: 991px) {
+      margin-bottom: 32px;
+      line-height: 29px;
+    }
   }
   .rates-item {
     width: 336px;
@@ -259,8 +314,7 @@
         }
       }
       .button {
-        padding-top: 19px;
-        padding-bottom: 17px;
+        padding: 19px 32px 17px;
       }
     }
   }
@@ -273,10 +327,10 @@
     padding-bottom: 47px;
     text-align: center;
   }
-  h1 {
+  h2 {
     margin-bottom: 36px;
     @media(max-width: 991px) {
-      margin-bottom: 32px;
+      margin-bottom: 35px;
     }
   }
   .author-tile {
@@ -297,6 +351,7 @@
       width: 238px;
       @media(max-width: 991px) {
         width: auto;
+        line-height: 21px;
       }
       font-style: normal;
       font-weight: normal;

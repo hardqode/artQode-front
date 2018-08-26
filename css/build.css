@@ -312,7 +312,7 @@ header {
   @media (max-width: 991px) {
     header {
       padding-top: 20px;
-      padding-bottom: 28px; } }
+      padding-bottom: 26px; } }
   header .container {
     display: flex;
     flex-wrap: wrap;
@@ -327,8 +327,7 @@ header {
     @media (max-width: 991px) {
       header .logo {
         margin: auto;
-        margin-bottom: 32px;
-        margin-top: 26px; }
+        margin-bottom: 32px; }
         header .logo.logged {
           width: 152px;
           margin: 0; } }
@@ -437,7 +436,7 @@ header {
       border-radius: 100%; }
   @media (max-width: 991px) {
     header .button-blue {
-      margin: 24px auto 0; } }
+      margin: 0px auto 0; } }
 
 .landing-section {
   background: white;
@@ -450,21 +449,28 @@ header {
   padding-top: 52px; }
   @media (max-width: 991px) {
     .landing-promo-section {
-      text-align: center; } }
+      text-align: center;
+      padding-top: 30px; } }
   .landing-promo-section h1 {
     margin-bottom: 24px; }
+    @media (max-width: 991px) {
+      .landing-promo-section h1 {
+        margin-bottom: 16px; } }
   .landing-promo-section p {
     margin-bottom: 40px; }
     @media (max-width: 991px) {
       .landing-promo-section p {
         margin-bottom: 32px;
         padding-left: 5px;
-        padding-right: 5px; } }
+        padding-right: 5px;
+        line-height: 24px; } }
   .landing-promo-section img {
     margin: auto; }
     @media (max-width: 991px) {
       .landing-promo-section img {
         margin-bottom: 48px; } }
+  .landing-promo-section .button-red {
+    padding: 19px 32px 17px; }
 
 .landing-skills-section {
   padding-top: 160px; }
@@ -487,8 +493,15 @@ header {
         max-width: 454px; } }
     .landing-skills-section .skill-container .skill--img {
       margin-bottom: 24px; }
+      @media (max-width: 991px) {
+        .landing-skills-section .skill-container .skill--img {
+          margin-bottom: 20px; } }
     .landing-skills-section .skill-container p {
       text-align: center; }
+      @media (max-width: 991px) {
+        .landing-skills-section .skill-container p {
+          margin-bottom: 0;
+          line-height: 24px; } }
 
 .landing-how-it-works-section {
   padding-top: 160px; }
@@ -499,7 +512,8 @@ header {
     .landing-how-it-works-section .text-block {
       text-align: center; }
       .landing-how-it-works-section .text-block p {
-        margin-bottom: 24px; }
+        margin-bottom: 24px;
+        line-height: 24px; }
         .landing-how-it-works-section .text-block p:first-of-type {
           margin-bottom: 0; } }
   @media (min-width: 992px) {
@@ -518,6 +532,9 @@ header {
           height: 174px; } }
   .landing-how-it-works-section h1 {
     margin-bottom: 24px; }
+    @media (max-width: 991px) {
+      .landing-how-it-works-section h1 {
+        margin-bottom: 16px; } }
 
 .landing-opportunities-section {
   padding-top: 160px; }
@@ -532,9 +549,14 @@ header {
         margin-bottom: 32px; } }
   .landing-opportunities-section h2 {
     margin-bottom: 6px; }
+    @media (max-width: 991px) {
+      .landing-opportunities-section h2 {
+        margin-bottom: 10px;
+        line-height: 29px; } }
   @media (max-width: 991px) {
     .landing-opportunities-section p {
-      margin-bottom: 24px; } }
+      margin-bottom: 24px;
+      line-height: 23px; } }
 
 @media (max-width: 991px) {
   .landing-match-section {
@@ -546,8 +568,16 @@ header {
     .landing-match-section h1 {
       margin-bottom: 10px; } }
 @media (max-width: 991px) {
+  .landing-match-section h2 {
+    margin-bottom: 10px;
+    line-height: 30px; } }
+@media (max-width: 991px) {
   .landing-match-section p {
     margin-bottom: 45px; } }
+  @media (max-width: 991px) and (max-width: 991px) {
+    .landing-match-section p {
+      line-height: 23px; } }
+
 .landing-match-section .img-block {
   display: flex;
   justify-content: center; }
@@ -558,10 +588,19 @@ header {
   .landing-vsc-section {
     padding-top: 72px;
     text-align: center; }
-    .landing-vsc-section h1 {
-      margin-bottom: 8px; }
+    .landing-vsc-section h2 {
+      margin-bottom: 8px; } }
+    @media (max-width: 991px) and (max-width: 991px) {
+      .landing-vsc-section h2 {
+        line-height: 29px;
+        margin-bottom: 9px; } }
+@media (max-width: 991px) {
     .landing-vsc-section p {
       margin-bottom: 24px; } }
+    @media (max-width: 991px) and (max-width: 991px) {
+      .landing-vsc-section p {
+        line-height: 23px;
+        margin-bottom: 25px; } }
 
 .landing-crossbrowsing-section {
   padding-bottom: 160px; }
@@ -570,18 +609,27 @@ header {
       padding-top: 72px;
       padding-bottom: 88px;
       text-align: center; }
-      .landing-crossbrowsing-section h1 {
-        margin-bottom: 8px; }
+      .landing-crossbrowsing-section h2 {
+        margin-bottom: 8px; } }
+    @media (max-width: 991px) and (max-width: 991px) {
+      .landing-crossbrowsing-section h2 {
+        line-height: 29px;
+        margin-bottom: 9px; } }
+  @media (max-width: 991px) {
       .landing-crossbrowsing-section p {
         margin-bottom: 24px; } }
+    @media (max-width: 991px) and (max-width: 991px) {
+      .landing-crossbrowsing-section p {
+        line-height: 23px;
+        margin-bottom: 25px; } }
 
 .landing-rates-section {
   padding-top: 64px;
-  padding-bottom: 96px; }
+  padding-bottom: 72px; }
   @media (max-width: 991px) {
     .landing-rates-section {
       padding-top: 40px;
-      padding-bottom: 64px;
+      padding-bottom: 40px;
       text-align: center; }
       .landing-rates-section h1 {
         margin-bottom: 32px; } }
@@ -593,6 +641,10 @@ header {
   .landing-rates-section h1 {
     margin-bottom: 48px;
     text-align: center; }
+    @media (max-width: 991px) {
+      .landing-rates-section h1 {
+        margin-bottom: 32px;
+        line-height: 29px; } }
   .landing-rates-section .rates-item {
     width: 336px;
     padding-left: 10px;
@@ -654,8 +706,7 @@ header {
           .landing-rates-section .rates-item .rates-item-block .description {
             margin-bottom: 24px; } }
       .landing-rates-section .rates-item .rates-item-block .button {
-        padding-top: 19px;
-        padding-bottom: 17px; }
+        padding: 19px 32px 17px; }
 
 .landing-authors-section {
   padding-bottom: 120px; }
@@ -664,11 +715,11 @@ header {
       padding-top: 48px;
       padding-bottom: 47px;
       text-align: center; } }
-  .landing-authors-section h1 {
+  .landing-authors-section h2 {
     margin-bottom: 36px; }
     @media (max-width: 991px) {
-      .landing-authors-section h1 {
-        margin-bottom: 32px; } }
+      .landing-authors-section h2 {
+        margin-bottom: 35px; } }
   @media (max-width: 991px) {
     .landing-authors-section .author-tile {
       margin-bottom: 32px; } }
@@ -690,7 +741,8 @@ header {
     margin-bottom: 0; }
     @media (max-width: 991px) {
       .landing-authors-section .author-tile .description {
-        width: auto; } }
+        width: auto;
+        line-height: 21px; } }
   @media (max-width: 991px) {
     .landing-authors-section .info-container {
       text-align: center;
@@ -1278,7 +1330,7 @@ footer {
   @media (max-width: 991px) {
     footer {
       padding-top: 24px;
-      padding-bottom: 14px; } }
+      padding-bottom: 22px; } }
   footer .footer-container {
     display: flex;
     flex-wrap: wrap;
