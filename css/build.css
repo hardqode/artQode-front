@@ -53,6 +53,10 @@ p {
 .site-nav {
   padding-top: 32px;
   margin-bottom: 29px; }
+  @media (max-width: 991px) {
+    .site-nav {
+      margin-bottom: 25px;
+      padding-top: 20px; } }
   .site-nav .site-nav--container .site-nav--item {
     font-size: 13px;
     color: #3770DD;
@@ -1368,6 +1372,9 @@ footer {
           margin-left: 32px;
           margin-bottom: 0; } }
 
+@media (max-width: 991px) {
+  .projects-section {
+    padding-bottom: 64px; } }
 .projects-section .project-section--container {
   display: flex;
   justify-content: space-between;
@@ -1387,7 +1394,7 @@ footer {
         height: 392px; } }
     @media (max-width: 991px) {
       .projects-section .project-section--container .project-section--item {
-        margin: auto auto 32px auto; } }
+        margin: auto auto 16px auto; } }
     .projects-section .project-section--container .project-section--item:hover {
       cursor: pointer;
       color: #2360D6; }

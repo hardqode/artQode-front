@@ -1,6 +1,10 @@
 .site-nav{
   padding-top: 32px;
   margin-bottom: 29px;
+  @media(max-width:991px){
+    margin-bottom: 25px;
+    padding-top: 20px;
+  }
   .site-nav--container{
 
     .site-nav--item{
